@@ -1,0 +1,60 @@
+body{
+  font-size: 16px;
+}
+.flex_container_fluid{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  align-items: center;
+  margin: 0px auto;
+  background: #F9FF52;
+}
+.flex_container{
+  max-width: 1440px;
+  margin: 0px;
+  padding: 4% 7% 5% 7%;
+}
+.flex_container h2{
+  width: 83%;
+  font-family: "Inter";
+  font-size: clamp(4em, 8vw, 5em);
+  letter-spacing: -2px;
+  font-weight: 400;
+}
+.flex_container span{
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #000;
+  /* background-image: url("../images/lf_underline.png"); */
+  /* background-size: cover; */
+  /* background-position-y: bottom; */
+  /* background-repeat: no-repeat; */
+}
+.keepScrollimage{
+  z-index: 99;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: -5%;
+}
+.BGdiagonal{
+  width: 100%;
+}
+
+
+
+/* MediaQuery MOBILE */
+@media (min-width:0px) and (max-width:580px) {
+
+  /* .flex_container{
+    height: 100vh;
+  } */
+
+  .flex_container h2{
+    width: 100%;
+  }
+
+  .keepScrollimage{
+    display: none;
+  }
+
+}

@@ -1,0 +1,241 @@
+.flex_container_fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin: 8% 0 200px 0;
+    background: #1C1C1C;
+  }
+  .flex_container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 8% 0px -100px 0px;
+    /* padding: 0px 0px -100px 0px; */
+  }
+  .container_images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: -26%;
+    }
+    .image_1{
+        align-self: flex-start;
+        margin: 2% 2% 2% 0;
+    }
+    .image_2{
+        margin: 0.5% 2% 2% 0;
+    }
+    .image_3{
+        margin: 2% 2% 2% 0;
+    }
+    .image_4{
+        margin: 0 0 2% 0;
+    }
+
+    /* Container title, description, estructura grafica  */
+    .container_process{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 8%;
+        padding-top: 4%;
+        }
+        .container_howWedo{
+            width: 40%;
+            align-self: center;
+            }
+            .titleSection{
+            color: #F9FF52;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            }
+            .subtitleSection{
+            color: white;
+            font-family: "Inter";
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 1.2em;
+            padding-right: 20%;
+            margin: 0.1em 0 0.5em 0;
+            }
+            .descriptionSection p{
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.8em;
+            }
+        .container_weDoItems{
+            width: 54%;
+            padding-left: 10%;
+            font-family: "Inter";
+            font-weight: 600;
+            font-size: 1.5em;
+            }
+            .arrowNumber{
+                z-index: 10;
+                display: flex;
+                position: relative;
+                left: -97PX;
+                top: 72PX;
+                margin-top: -40px;
+            }
+            .processArrow{
+                position: relative;
+                left: 20px;
+                top: 30px;
+            }
+            .number_123{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #1C1C1C;
+                background: white;
+                width: 40px;
+                height: 40px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .number_4{
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left: -20px;
+                top: 34px;
+                color: #1C1C1C;
+                background: #F9FF52;
+                width: 40px;
+                height: 40px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .item_123{
+                color: white;
+                border: 1px white solid;
+                padding: 0.8em;
+                padding-left: 1.8em;
+            }
+            .item_4{
+                color: white;
+                border: 1px #F9FF52 solid;
+                background: rgba(249, 255, 82, 0.1);
+                padding: 0.8em;
+                padding-left: 1.8em;
+            }
+    .frameVideo{
+        position: relative;
+        border: 2px #1C1C1C solid;
+        top: 100px;
+        left: 8px;
+        margin: 0;
+        padding: 0;
+    }
+    .container_video{
+        background: #F9FF52;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -8px;
+        left: -8px;
+        }
+        .video_text{
+            width: 60%;
+            font-weight: 400;
+            letter-spacing: -1px;
+            font-size: clamp(1em, 2.2vw, 2em);
+            padding: 2% 4% 0 4%;
+        }
+        .btn_scheMeet{
+            background: #1C1C1C;
+            color: white;
+            width: 256px;
+            height: 56px;
+            margin-top: 8%;
+            padding: 1em 0;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+            }
+            .btn_scheMeet:hover{
+                background: black;
+                cursor: pointer;
+            }
+        .video_preview{
+            align-self: center;
+            background: #1C1C1C;
+            margin: 0 0 0 10px;
+        }
+
+    /* MediaQuery MOBILE */
+@media (min-width:0px) and (max-width:720px) {
+
+    .flex_container_fluid{
+        margin: 25% 0 200px 0;
+      }
+    .container_images{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -35%;
+        margin-bottom: 10%;
+        }
+    .image_1{
+        width: 43%;
+        align-self: flex-start;
+        margin: 2% 2% 0 0;
+    }
+    .image_2{
+        width: 52%;
+        margin: 1% 0 0 0;
+    }
+    .image_3{
+        order: 4;
+        width: 48%;
+        margin: 0 0 2% 0;
+    }
+    .image_4{
+        width: 46%;
+        margin: -2% 2% 2% 0;
+    }
+
+    .container_howWedo{
+        width: 100%;
+    }
+    .container_weDoItems{
+        width: 100%;
+    }
+
+    .container_video{
+        flex-direction: column;
+        align-items: center;
+        }
+        .video_text{
+            order: 2;
+            font-size: 1.5em;
+            width: 100%;
+            padding: 2% 4% 0 4%;
+        }
+        .btn_scheMeet{
+            width: 100%;
+            margin: 10% 0;
+            /* padding: 0.8em 0;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center; */
+            }
+            .video_preview{
+                text-align: center;
+                width: 100%;
+                order: 1;
+                margin: 0;
+            }
+
+}
