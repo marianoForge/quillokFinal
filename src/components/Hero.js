@@ -22,8 +22,7 @@ const Hero = () => {
           // data-aos-delay="500"
           // data-aos-duration="1500"
           >
-            We are here to help you <span>launch fast</span> and grow strong
-            lorem ipsum dolor sit.
+            We are here to help you <span>launch<span>s</span>fast</span> and grow strong lorem ipsum dolor sit.
           </h2>
           <div className={heroStyles.keepScrollimage}>
             <img src={KeepScrolling} alt="keep Scrolling" />
@@ -31,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={heroStyles.BGdiagonal}>
-        <img src={Diagonal} width="2020px" alt="" />
+        <img src={Diagonal} width="100%" alt="" />
       </div>
     </div>
   );

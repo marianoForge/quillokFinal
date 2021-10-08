@@ -68,8 +68,8 @@
         color: white;
         font-size: 0.9em;
         font-weight: 300;
-        cursor: pointer;
         margin-bottom: 0.5em;
+        cursor: pointer;
       }
     .footer_beSocial{
       color: white;
@@ -85,6 +85,9 @@
         justify-content: space-between;
         margin-top: 1em;
         width: 70px;
+        }
+        .beSocial_rrss img{
+          cursor: pointer;
         }
     .footer_getBonus{
       display: flex;

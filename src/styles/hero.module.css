@@ -11,9 +11,10 @@ body{
   background: #F9FF52;
 }
 .flex_container{
+  z-index: 20;
   max-width: 1440px;
   margin: 0px;
-  padding: 4% 7% 5% 7%;
+  padding: 4% 7% 6% 7%;
 }
 .flex_container h2{
   width: 83%;
@@ -24,30 +25,23 @@ body{
 }
 .flex_container span{
   font-family: 'Playfair Display', serif;
-  border-bottom: 2px solid #000;
-  /* background-image: url("../images/lf_underline.png"); */
-  /* background-size: cover; */
-  /* background-position-y: bottom; */
-  /* background-repeat: no-repeat; */
-}
+  /* border-bottom: 2px solid #000; */
+  background-image: url("../images/HomeBGunderline.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom 5%;
+  }
+  .flex_container span span{
+    color: #F9FF52;
+  }
 .keepScrollimage{
   z-index: 99;
   position: absolute;
   margin-top: 3%;
   margin-left: -5%;
 }
-.BGdiagonal{
-  width: 100%;
-}
-
-
 
 /* MediaQuery MOBILE */
 @media (min-width:0px) and (max-width:580px) {
-
-  /* .flex_container{
-    height: 100vh;
-  } */
 
   .flex_container h2{
     width: 100%;

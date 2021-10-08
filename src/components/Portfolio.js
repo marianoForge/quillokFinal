@@ -18,7 +18,7 @@ const Portfolio = () => {
               <div className={portStyles.highlight}>
                 <div className={portStyles.menuShelfSet}>
                   <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} alt="Arrow Menu" />
+                    <img src={arrowMenu} width="100%" alt="Arrow Menu" />
                   </div>
                   <div className={portStyles.workSelect}>ShelfSet</div>
                 </div>
@@ -30,14 +30,14 @@ const Portfolio = () => {
                   SEE MORE PROJECTS
                 </div>
                 <div className={portStyles.arrowMoreProjects}>
-                  <img src={moreProjects} alt="More Projects" />
+                  <img src={moreProjects} width="100%" alt="More Projects" />
                 </div>
               </div>
             </div>
           </div>
           <div className={portStyles.rightContent}>
             <div className={portStyles.frameImageWork}>
-              <img className={portStyles.imageWork} src={works} alt="Works" />
+              <img className={portStyles.imageWork} width="100%" src={works} alt="Works" />
             </div>
             <div className={portStyles.workDescription}>
               <div className={portStyles.numberDesc}>01</div>

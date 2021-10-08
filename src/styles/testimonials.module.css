@@ -23,7 +23,6 @@
             align-self: center;
             display: flex;
             flex-direction: column;
-            /* border: 1px #1C1C1C solid; */
             }
             .titleSection{
               color: rgba(28, 28, 28, 0.3);
@@ -125,10 +124,10 @@
         height: 270px;
     }
     .titleSection{
-        margin: 60px 0 0 80px;
+        margin: 40px 0 0 80px;
     }
     .imgBGtitle{
-        top: -180px;
+        top: -200px;
         left: 40px;
     }
     .strokeBox{

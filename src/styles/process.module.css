@@ -6,6 +6,9 @@
     padding: 0px;
     margin: 8% 0 200px 0;
     background: #1C1C1C;
+    background-image: url("../images/processBGcircles.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
   }
   .flex_container{
     max-width: 1440px;
@@ -169,6 +172,7 @@
                 cursor: pointer;
             }
         .video_preview{
+            display: flex;
             align-self: center;
             background: #1C1C1C;
             margin: 0 0 0 10px;
@@ -179,6 +183,7 @@
 
     .flex_container_fluid{
         margin: 25% 0 200px 0;
+        background-position-y: top;
       }
     .container_images{
         flex-wrap: wrap;

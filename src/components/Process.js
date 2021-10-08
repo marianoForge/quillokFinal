@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import process1 from "../images/process_img_1.svg";
-import process2 from "../images/process_img_2.svg";
-import process3 from "../images/process_img_3.svg";
-import process4 from "../images/process_img_4.svg";
+import process1 from "../images/process_img_1.jpg";
+import process2 from "../images/process_img_2.jpg";
+import process3 from "../images/process_img_3.jpg";
+import process4 from "../images/process_img_4.jpg";
+import previewVideo from "../images/process_preview_video.jpg";
 import arrowWhite from "../images/process_arrow_white.svg";
 import arrowYellow from "../images/process_arrow_yellow.svg";
-import previewVideo from "../images/process_preview_video.svg";
 import * as processStyles from "../styles/process.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +27,7 @@ const Process = () => {
             // data-aos-delay="0"
             // data-aos-duration="1000"
           >
-            <img src={process1} alt="Demo" />
+            <img src={process1} width="100%" alt="Demo" />
           </div>
           <div
             className={processStyles.image_2}
@@ -35,7 +35,7 @@ const Process = () => {
             // data-aos-delay="500"
             // data-aos-duration="1000"
           >
-            <img src={process2} alt="Demo" />
+            <img src={process2} width="100%" alt="Demo" />
           </div>
           <div
             className={processStyles.image_3}
@@ -43,7 +43,7 @@ const Process = () => {
             // data-aos-delay="1000"
             // data-aos-duration="1000"
           >
-            <img src={process3} alt="Demo" />
+            <img src={process3} width="100%" alt="Demo" />
           </div>
           <div
             className={processStyles.image_4}
@@ -51,7 +51,7 @@ const Process = () => {
             // data-aos-delay="1500"
             // data-aos-duration="1000"
           >
-            <img src={process4} alt="Demo" />
+            <img src={process4} width="100%" alt="Demo" />
           </div>
         </div>
 
@@ -189,7 +189,7 @@ const Process = () => {
                 </div>
               </div>
               <div className={processStyles.video_preview}>
-                <img src={previewVideo} alt="Demo" />
+                <img src={previewVideo} width="100%" alt="Demo" />
               </div>
             </div>
           </div>

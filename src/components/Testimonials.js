@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import * as testimonialStyles from "../styles/testimonials.module.css";
-import roy from "../images/testimonial_2_roy.svg";
-import tom from "../images/testimonial_1_tom.svg";
+import roy from "../images/testimonial_2_roy.png";
+import tom from "../images/testimonial_1_tom.png";
 import title from "../images/testimonial_bg_title.svg";
-import shakur from "../images/testimonial_3_shakur.svg";
+import shakur from "../images/testimonial_3_shakur.png";
+import * as testimonialStyles from "../styles/testimonials.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
