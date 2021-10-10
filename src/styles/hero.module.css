@@ -25,10 +25,9 @@ body{
 }
 .flex_container span{
   font-family: 'Playfair Display', serif;
-  /* border-bottom: 2px solid #000; */
   background-image: url("../images/HomeBGunderline.svg");
   background-repeat: no-repeat;
-  background-position-y: bottom 5%;
+  background-position-y: 102%;
   }
   .flex_container span span{
     color: #F9FF52;
@@ -38,6 +37,10 @@ body{
   position: absolute;
   margin-top: 3%;
   margin-left: -5%;
+}
+.BGdiagonal{
+  margin: 0px;
+  padding: 0px;
 }
 
 /* MediaQuery MOBILE */

@@ -106,19 +106,19 @@
       display: flex; 
       flex-direction: column;
       align-items: flex-end;
+    }
+    .frameImageWork{
+      position: relative;
+      border: 2px #1C1C1C solid;
+      top: -100px;
+      margin: 0px;
+      padding: 0px;
       }
-      .frameImageWork{
+      .imageWork{
         position: relative;
-        border: 2px #1C1C1C solid;
-        top: -100px;
-        left: 8px;
-        margin: 0;
-        padding: 0;
-        }
-        .imageWork{
-          left: -8px;
-          top: -8px;
-        }
+        top: -4px;
+        left: -8px;
+      }
       .workDescription{
         display: flex;
         justify-content: space-between;

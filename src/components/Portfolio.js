@@ -37,7 +37,9 @@ const Portfolio = () => {
           </div>
           <div className={portStyles.rightContent}>
             <div className={portStyles.frameImageWork}>
-              <img className={portStyles.imageWork} width="100%" src={works} alt="Works" />
+              <div className={portStyles.imageWork} >
+                <img src={works} width="100%" alt="Works" />
+              </div>
             </div>
             <div className={portStyles.workDescription}>
               <div className={portStyles.numberDesc}>01</div>

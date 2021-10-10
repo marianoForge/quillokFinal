@@ -20,12 +20,12 @@
   z-index: 0;
   text-align: right;
   width: 100%;
-  height: 200vh;
+  height: 250vh;
   overflow: hidden;
   }
   .bg_circles img{
     position: relative;
-    top: 460px;
+    top: 660px;
     right: -230px;
     transform: rotateZ(-30deg);
     }
@@ -39,14 +39,14 @@
   .bg_circles{
     text-align: left;
     width: 100%;
-    height: 200vh;
+    height: 250vh;
     overflow: hidden;
     }
     .bg_circles img{
       position: relative;
       width: 800px;
-      top: 680px;
-      right: -300px;
+      top: 900px;
+      right: -400px;
       transform: rotateZ(60deg);
       }
 
@@ -61,15 +61,15 @@
   .bg_circles{
     text-align: left;
     width: 100%;
-    height: 180vh;
+    height: 250vh;
     overflow: hidden;
     }
     .bg_circles img{
       position: relative;
-      width: 600px;
-      top: 840px;
+      width: 500px;
+      top: 900px;
       right: -15%;
-      transform: rotateZ(60deg);
+      transform: rotateZ(45deg);
       }
 
 }
