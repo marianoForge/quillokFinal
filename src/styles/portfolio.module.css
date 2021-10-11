@@ -154,6 +154,7 @@
   }
   .frameImageWork{
     align-self: center;
+    left: 8px;
   }
   .leftContent{
     align-self: baseline;
