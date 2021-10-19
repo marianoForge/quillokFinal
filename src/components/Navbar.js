@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className={navbarStyles.flex_container_fluid}>
       <div className={navbarStyles.flex_container}>
-        <div>
+        <div className={navbarStyles.logoQuillok}>
           <img src={QuillokLogo} alt="Quillok Logo" />
         </div>
       </div>

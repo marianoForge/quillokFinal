@@ -9,12 +9,13 @@ body{
   align-items: center;
   margin: 0px auto;
   background: #F9FF52;
+  overflow: hidden;
 }
 .flex_container{
   z-index: 20;
   max-width: 1440px;
   margin: 0px;
-  padding: 4% 7% 6% 7%;
+  padding: 6% 4% 10% 9%;
 }
 .flex_container h2{
   width: 83%;
@@ -27,16 +28,20 @@ body{
   font-family: 'Playfair Display', serif;
   background-image: url("../images/HomeBGunderline.svg");
   background-repeat: no-repeat;
-  background-position-y: 102%;
-  }
-  .flex_container span span{
-    color: #F9FF52;
+  background-position-y: 100%;
+  line-height: 1.25em;
+  /* letter-spacing: -6px; */
+}
+.flex_container span span{
+    letter-spacing: -6px;
+    color: #f9ff5200;
+    /* line-height: 1.4em; */
   }
 .keepScrollimage{
   z-index: 99;
   position: absolute;
-  margin-top: 3%;
-  margin-left: -5%;
+  margin-top: 5%;
+  margin-left: -7%;
 }
 .BGdiagonal{
   margin: 0px;
@@ -44,12 +49,13 @@ body{
 }
 
 /* MediaQuery MOBILE */
-@media (min-width:0px) and (max-width:580px) {
+@media (min-width:0px) and (max-width:700px) {
 
-  .flex_container h2{
+  .flex_container{
     width: 100%;
+    /* padding-left: 7%; */
+    padding: 10% 3% 12% 7%;
   }
-
   .keepScrollimage{
     display: none;
   }

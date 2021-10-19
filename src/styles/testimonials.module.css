@@ -6,6 +6,7 @@
     align-items: center;
     margin: 0;
     background: #F9FF52;
+    overflow: hidden;
     }
     .flex_container{
     display: flex;
@@ -14,15 +15,15 @@
     max-width: 1440px;
     width: 100%;
     margin: 0px;
-    padding: 7%;
-    padding-bottom: 6%;
+    padding: 90px 7% 90px 7%;
         }
         .testimonialTitle{
-            width: 368px;
+            width: 360px;
             height: 378px;
             align-self: center;
             display: flex;
             flex-direction: column;
+            margin: 0 5px 0 10px;
             }
             .titleSection{
               color: rgba(28, 28, 28, 0.3);
@@ -30,7 +31,7 @@
               font-weight: 700;
               letter-spacing: 2px;
               padding: 0;
-              margin: 120px 0 0 80px;
+              margin: 120px 0 0 70px;
             }
             .subtitleSection{
             font-family: "Inter";
@@ -39,18 +40,18 @@
             letter-spacing: -1px;
             line-height: 1.2em;
             padding: 0 30px 0 0;
-            margin: 0 0 0 80px;
+            margin: 0 0 0 70px;
             }
             .imgBGtitle{
                 position: relative;
                 top: -230px;
-                left: 50px;
+                left: 40px;
             }
         .strokeBox{
-            width: 378px;
+            width: 370px;
             border: 2px #1C1C1C solid;
-            margin: 20px 0 20px 0;
-            padding: 0;
+            margin: 10px 10px 20px 0;
+            padding: 0px;
             }
             .testimonialBox{
                 display: flex;
@@ -60,6 +61,7 @@
                 height: 370px;
                 top: -8px;
                 left: -8px;
+                margin: 0px;
                 background: white;
                }
                .boxHeader{
@@ -101,6 +103,9 @@
     .flex_container{
         justify-content: space-around;
     }
+    .testimonialTitle{
+        width: 360px;
+    }
     .strokeBox{
         order: 1;
     }
@@ -121,7 +126,7 @@
 
     .testimonialTitle{
         width: 380px;
-        height: 270px;
+        height: 240px;
     }
     .titleSection{
         margin: 40px 0 0 80px;
@@ -140,7 +145,7 @@
 @media (min-width:0px) and (max-width:500px) {
 
     .titleSection{
-        margin: 90px 0 0 20px;
+        margin: 70px 0 0 20px;
       }
       .subtitleSection{
       padding: 0 10px 0 0;
@@ -148,7 +153,7 @@
       }
 
     .testimonialTitle{
-        margin: -50px 0 0 0;
+        margin: -80px 0 0 0;
         height: 260px;
     }
     .strokeBox{

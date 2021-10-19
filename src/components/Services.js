@@ -25,7 +25,7 @@ const Services = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
             data-aos-duration="1000"
-          >
+          >0
             {service.id}
           </div>
           <h2>{service.title}</h2>

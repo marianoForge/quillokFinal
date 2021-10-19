@@ -6,27 +6,28 @@
   align-items: center;
   margin: 0px auto;
   background: #F9FF52;
+  overflow: hidden;
 }
 .flex_container{
   z-index: 10;
   width: 100%;
   max-width: 1440px;
   margin: 0px;
-  padding-left: 7%;
-  padding-top: 2%;
+  padding-left: 9%;
+  padding-top: 40px;
 }
 .bg_circles{
   position: absolute;
   z-index: 0;
-  text-align: right;
   width: 100%;
-  height: 250vh;
+  text-align: right;
+  height: 200vh;
   overflow: hidden;
   }
   .bg_circles img{
     position: relative;
-    top: 660px;
-    right: -230px;
+    top: 542px;
+    right: -200px;
     transform: rotateZ(-30deg);
     }
 
@@ -35,40 +36,31 @@
 
   .flex_container{
     padding-top: 4%;
-  }
-  .bg_circles{
-    text-align: left;
-    width: 100%;
-    height: 250vh;
-    overflow: hidden;
     }
-    .bg_circles img{
-      position: relative;
-      width: 800px;
-      top: 900px;
-      right: -400px;
-      transform: rotateZ(60deg);
-      }
-
+    .logoQuillok img{
+      width: 110px;
+    }
 }
 
 /* MediaQuery MOBILE */
 @media (min-width:0px) and (max-width:700px) {
 
   .flex_container{
-    padding-top: 12%;
+    padding-left: 7%;
+    padding-top: 15%;
+  }
+  .logoQuillok img{
+    width: 90px;
   }
   .bg_circles{
     text-align: left;
-    width: 100%;
-    height: 250vh;
     overflow: hidden;
     }
     .bg_circles img{
-      position: relative;
-      width: 500px;
-      top: 900px;
-      right: -15%;
+      position: absolute;
+      width: 650px;
+      top: 53%;
+      right: -150px;
       transform: rotateZ(45deg);
       }
 

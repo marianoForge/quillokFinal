@@ -13,8 +13,7 @@
   .flex_container{
     max-width: 1440px;
     width: 100%;
-    margin: 8% 0px -100px 0px;
-    /* padding: 0px 0px -100px 0px; */
+    margin: 5% 0px -100px 0px;
   }
   .container_images{
     display: flex;
@@ -22,7 +21,8 @@
     align-items: center;
     width: 100%;
     position: relative;
-    margin-top: -26%;
+    margin-top: -22%;
+    overflow: hidden;
     }
     .image_1{
         align-self: flex-start;
@@ -44,8 +44,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0;
-        padding: 0 8%;
-        padding-top: 4%;
+        padding: 4% 9% 2% 9%;
         }
         .container_howWedo{
             width: 40%;
@@ -63,6 +62,7 @@
             font-weight: 600;
             font-size: 2.5em;
             line-height: 1.2em;
+            letter-spacing: -1px;
             padding-right: 20%;
             margin: 0.1em 0 0.5em 0;
             }
@@ -74,7 +74,7 @@
             line-height: 1.8em;
             }
         .container_weDoItems{
-            width: 54%;
+            width: 52%;
             padding-left: 10%;
             font-family: "Inter";
             font-weight: 600;
@@ -85,8 +85,8 @@
                 display: flex;
                 position: relative;
                 left: -97PX;
-                top: 72PX;
-                margin-top: -40px;
+                top: 74PX;
+                margin-top: -52px;
             }
             .processArrow{
                 position: relative;
@@ -111,7 +111,7 @@
                 align-items: center;
                 position: relative;
                 left: -20px;
-                top: 34px;
+                top: 20px;
                 color: #1C1C1C;
                 background: #F9FF52;
                 width: 40px;
@@ -122,20 +122,21 @@
             .item_123{
                 color: white;
                 border: 1px white solid;
-                padding: 0.8em;
+                padding: 0.65em;
                 padding-left: 1.8em;
             }
             .item_4{
                 color: white;
                 border: 1px #F9FF52 solid;
                 background: rgba(249, 255, 82, 0.1);
-                padding: 0.8em;
+                padding: 0.65em;
                 padding-left: 1.8em;
+                margin-top: -10px;
             }
     .frameVideo{
         position: relative;
         border: 2px #1C1C1C solid;
-        top: 100px;
+        top: 130px;
         left: 8px;
         margin: 0;
         padding: 0;
@@ -210,11 +211,20 @@
         margin: -2% 2% 2% 0;
     }
 
+    .container_process{
+        padding: 4% 5% 0% 7%;
+    }
+
     .container_howWedo{
         width: 100%;
     }
     .container_weDoItems{
         width: 100%;
+        padding: 4% 2% 0% 14%;
+    }
+
+    .frameVideo{
+        top: 80px;
     }
 
     .container_video{

@@ -5,11 +5,12 @@
   width: 100%;
   padding: 0px;
   margin: 0;
+  overflow: hidden;
 }
 .flex_container {
   max-width: 1440px;
   margin: 0px;
-  padding: 4% 7% 7% 7%;
+  padding: 2.5% 7% 170px 9%;
 }
 .titleSection {
   color: #bcbcbc;
@@ -26,8 +27,8 @@
   margin: 0.1em 0 1em 0;
 }
 .pointServices {
-  width: 30%;
-  margin: 0 0 20px 0;
+  width: 31%;
+  margin: 4px 0 20px 0;
 }
 .numberTitle {
   display: flex;
@@ -62,13 +63,19 @@ h2 {
 }
 
 /* MediaQuery TaBLET */
-@media (min-width: 611px) and (max-width: 980px) {
+@media (min-width: 611px) and (max-width: 1100px) {
+  .flex_container {
+    padding: 2.5% 7% 15% 9%;
+  }
   .pointServices {
     width: 46%;
   }
 }
 /* MediaQuery MOBILE */
 @media (min-width: 0px) and (max-width: 610px) {
+  .flex_container {
+    padding: 2.5% 7% 10% 7%;
+  }
   .pointServices {
     width: 100%;
   }
