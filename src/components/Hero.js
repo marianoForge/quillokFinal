@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import Diagonal from "../images/Home_diagonal.svg";
-import KeepScrolling from "../images/keepScrolling.svg";
-import * as heroStyles from "../styles/hero.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import Diagonal from '../images/Home_diagonal.svg';
+import KeepScrolling from '../images/keepScrolling.svg';
+import * as heroStyles from '../styles/hero.module.css';
+
+import 'aos/dist/aos.css';
 
 const Hero = () => {
   // useEffect(() => {
@@ -22,7 +22,11 @@ const Hero = () => {
           // data-aos-delay="500"
           // data-aos-duration="1500"
           >
-            We are here to help you <span>launch<span>s</span>fast</span> and grow strong lorem ipsum dolor sit.
+            We are here to help you{' '}
+            <span>
+              launch<span>s</span>fast
+            </span>{' '}
+            and grow strong lorem ipsum dolor sit.
           </h2>
           <div className={heroStyles.keepScrollimage}>
             <img src={KeepScrolling} alt="keep Scrolling" />
