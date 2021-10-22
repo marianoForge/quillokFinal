@@ -1,6 +1,7 @@
 import React from "react";
 import moreProjects from "../images/work_arrow_MoreProjects.svg";
 import arrowMenu from "../images/work_arrow_menu.svg";
+import imgArrowUnselect from "../images/work_arrowUnselect.svg";
 import works from "../images/works_img_1.png";
 import * as portStyles from "../styles/portfolio.module.css";
 
@@ -23,8 +24,14 @@ const Portfolio = () => {
                   <div className={portStyles.workSelect}>ShelfSet</div>
                 </div>
               </div>
-              <div className={portStyles.workUnselect}>FaceFwd</div>
-              <div className={portStyles.workUnselect}>Recordify</div>
+
+              <div className={portStyles.unhighlight}>
+                <div className={portStyles.workUnselect}>FaceFwd</div>
+              </div>
+              <div className={portStyles.unhighlight}>
+                <div className={portStyles.workUnselect}>Recordify</div>
+              </div>
+
               <div className={portStyles.btMoreProjects}>
                 <div className={portStyles.txtMoreProjects}>
                   SEE MORE PROJECTS

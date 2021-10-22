@@ -158,7 +158,11 @@
     }
     .strokeBox{
         width: 338px;
-    }
+        margin: 10px 0px 20px 0;
+        }
+        .testimonialBox{
+            height: 384px;
+           }
     .imgBGtitle{
         top: -140px;
         left: 70px;
