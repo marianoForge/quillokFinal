@@ -1,9 +1,9 @@
-import React from "react";
-import moreProjects from "../images/work_arrow_MoreProjects.svg";
-import arrowMenu from "../images/work_arrow_menu.svg";
-import imgArrowUnselect from "../images/work_arrowUnselect.svg";
-import works from "../images/works_img_1.png";
-import * as portStyles from "../styles/portfolio.module.css";
+import React from 'react';
+import moreProjects from '../images/work_arrow_MoreProjects.svg';
+import PortfolioItems from './PortfolioItems';
+import works from '../images/works_img_1.png';
+import * as portStyles from '../styles/portfolio.module.css';
+import { projects } from '../content/projects';
 
 const Portfolio = () => {
   return (
@@ -16,22 +16,57 @@ const Portfolio = () => {
         <div className={portStyles.WorksContent}>
           <div className={portStyles.leftContent}>
             <div className={portStyles.WorksMenu}>
-              <div className={portStyles.highlight}>
-                <div className={portStyles.menuShelfSet}>
-                  <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} width="100%" alt="Arrow Menu" />
-                  </div>
-                  <div className={portStyles.workSelect}>ShelfSet</div>
-                </div>
+              <div>
+                {projects.map((project) => {
+                  const img2 = () => {
+                    switch (project.id) {
+                      case 1:
+                        return works;
+                      case 2:
+                        return works;
+                      case 3:
+                        return works;
+                      default:
+                        return null;
+                    }
+                  };
+                  const status = () => {
+                    switch (project.id) {
+                      case 1:
+                        return true;
+                      case 2:
+                        return false;
+                      case 3:
+                        return false;
+                      default:
+                        return null;
+                    }
+                  };
+                  const num = () => {
+                    switch (project.id) {
+                      case 1:
+                        return '01';
+                      case 2:
+                        return '02';
+                      case 3:
+                        return '03';
+                      default:
+                        return null;
+                    }
+                  };
+                  return (
+                    <React.Fragment key={project.id}>
+                      <PortfolioItems
+                        title={project.title}
+                        content={project.contentShort}
+                        status={status()}
+                        image={img2()}
+                        num={num()}
+                      />
+                    </React.Fragment>
+                  );
+                })}
               </div>
-
-              <div className={portStyles.unhighlight}>
-                <div className={portStyles.workUnselect}>FaceFwd</div>
-              </div>
-              <div className={portStyles.unhighlight}>
-                <div className={portStyles.workUnselect}>Recordify</div>
-              </div>
-
               <div className={portStyles.btMoreProjects}>
                 <div className={portStyles.txtMoreProjects}>
                   SEE MORE PROJECTS
@@ -39,22 +74,6 @@ const Portfolio = () => {
                 <div className={portStyles.arrowMoreProjects}>
                   <img src={moreProjects} width="100%" alt="More Projects" />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className={portStyles.rightContent}>
-            <div className={portStyles.frameImageWork}>
-              <div className={portStyles.imageWork} >
-                <img src={works} width="100%" alt="Works" />
-              </div>
-            </div>
-            <div className={portStyles.workDescription}>
-              <div className={portStyles.numberDesc}>01</div>
-              <div className={portStyles.textDesc}>
-                <strong>ShelfSet</strong> is a complete tool for shelf space
-                analysis. Leveraging AI technology, users can obtain critical
-                data on how the shelves are laid out, so they can take action on
-                how to maximize and optimize their operations.
               </div>
             </div>
           </div>
