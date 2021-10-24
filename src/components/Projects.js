@@ -1,8 +1,8 @@
 import React from 'react';
 import { projects } from '../content/projects';
-import works from '../images/works_img_1.png';
-import logo from '../images/Quillok_Logo.png';
-import keepScrolling from '../images/keepScrolling.png';
+import work1 from '../images/works_img_1.png';
+import work2 from '../images/works_img_2.png';
+import work3 from '../images/works_img_3.png';
 import Accordion from './Accordion';
 
 import * as projectStyles from '../styles/projects.module.css';
@@ -15,14 +15,14 @@ const Projects = () => {
           <div className={projectStyles.titleSection}>See our Works</div>
           <div>
             {projects.map((project) => {
-              const img2 = () => {
+              const img = () => {
                 switch (project.id) {
                   case 1:
-                    return works;
+                    return work1;
                   case 2:
-                    return logo;
+                    return work2;
                   case 3:
-                    return keepScrolling;
+                    return work3;
                   default:
                     return null;
                 }
@@ -45,7 +45,7 @@ const Projects = () => {
                     title={project.title}
                     content={project.content}
                     status={status}
-                    image={img2()}
+                    image={img()}
                   />
                 </React.Fragment>
               );
