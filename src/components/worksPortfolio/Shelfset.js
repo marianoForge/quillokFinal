@@ -1,95 +1,50 @@
-import React from "react";
-import * as portStyles from "../../styles/portfolio.module.css";
-import moreProjects from "../../images/work_arrow_MoreProjects.svg";
-import arrowMenu from "../../images/work_arrow_menu.svg";
-import works from "../../images/works_img_1.png";
+import React, { useState } from 'react';
+import * as portStyles from '../../styles/portfolio.module.css';
+import { projects } from '../../content/projects';
+import arrowMenu from '../../images/work_arrow_menu.svg';
+import works from '../../images/works_img_1.png';
 // import imgArrowUnselect from "../images/work_arrowUnselect.svg";
 
-
 const Shelfset = () => {
-    
-    const onOff  = () =>{
+  const [show, setShow] = useState(true);
 
-        // const cambiaWork = (nuevoWork) => {
-        //     setShow(style={{ display: show ? "block" : "none" }};)
-        //   }
+  const handleShow = () => {
+    setShow(!show);
+  };
 
-        let workUno = document.getElementById("workShelfset");
-        let workDos = document.getElementById("workFacefwd");
-        let workTres = document.getElementById("workRecordify");
+  return (
+    <div className={portStyles.WorksContent}>
+      {/* <button onClick={onOff} > CONCHA LORA</button> */}
 
-        // if ( workUno.display === "block")  {
-        //     workUno.display = "none";
-        // } else if (workUno.display === "none") {
-        //     workTres.display = "block";
-        // } else {
-        //     alert ('cacotaaa')
-        //     workDos.display = "block";
-        // }
-
-        workUno.innerHTML = "PUTO";
-        workDos.innerHTML = "EL QUE";
-        workTres.innerHTML = "LEE";
-    }
-
-    return(
-
-        <div className={portStyles.WorksContent}>
-
-              {/* <button onClick={onOff} > CONCHA LORA</button> */}
-              
-          <div className={portStyles.leftContent}>
-            <div className={portStyles.WorksMenu}>
-
-              <div className={portStyles.highlight}>
-                <div className={portStyles.btSelect}>
-                  <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} width="100%" alt="Arrow Menu" />
-                  </div>
-                  <div className={portStyles.workSelect}>ShelfSet</div>
-                </div>
+      <div className={portStyles.leftContent}>
+        <div className={portStyles.WorksMenu} onClick={handleShow}>
+          <div className={portStyles.highlight}>
+            <div className={portStyles.btSelect}>
+              <div className={portStyles.menuArrow}>
+                <img src={arrowMenu} width="100%" alt="Arrow Menu" />
               </div>
-
-              <div onClick={onOff} className={portStyles.unhighlight}>
-                <div className={portStyles.workUnselect}>FaceFwd</div>
-              </div>
-
-              <div className={portStyles.unhighlight}>
-                <div className={portStyles.workUnselect}>Recordify</div>
-              </div>
-
-              <div className={portStyles.btMoreProjects}>
-                <div className={portStyles.txtMoreProjects}>
-                  SEE MORE PROJECTS
-                </div>
-                <div className={portStyles.arrowMoreProjects}>
-                  <img src={moreProjects} width="100%" alt="More Projects" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={portStyles.rightContent}>
-            <div className={portStyles.frameImageWork}>
-              <div className={portStyles.imageWork} >
-                <img src={works} width="100%" alt="Works" />
-              </div>
-            </div>
-            <div className={portStyles.workDescription}>
-              <div className={portStyles.numberDesc}>01</div>
-              <div className={portStyles.textDesc}>
-                <strong>ShelfSet</strong> is a complete tool for shelf space
-                analysis. Leveraging AI technology, users can obtain critical
-                data on how the shelves are laid out, so they can take action on
-                how to maximize and optimize their operations.
-              </div>
+              <div className={portStyles.workSelect}>ShelfSet</div>
             </div>
           </div>
         </div>
-
-
-    )
-
- 
+      </div>
+      {show ? (
+        <div className={portStyles.rightContent}>
+          <div className={portStyles.frameImageWork}>
+            <div className={portStyles.imageWork}>
+              <img src={works} width="100%" alt="Works" />
+            </div>
+          </div>
+          <div className={portStyles.workDescription}>
+            <div className={portStyles.numberDesc}>01</div>
+            <div className={portStyles.textDesc}>
+              <strong>{projects[0].title}</strong> {projects[0].contentShort}
+            </div>
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
 };
 
-export default Shelfset
+export default Shelfset;
