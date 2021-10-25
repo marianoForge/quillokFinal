@@ -51,8 +51,13 @@ const Portfolio = () => {
                     <img src={arrowMenu} width='100%' alt='Arrow Menu' />
                   </div>
                   <div
-                    className={portStyles.workSelect}
-                    onClick={handleShowShelf}
+                    className={
+                      showShelf
+                        ? portStyles.workSelect
+                        : portStyles.workUnselect
+                    }
+                    onClick={showShelf ? null : handleShowShelf}
+                    disabled={true}
                   >
                     ShelfSet
                   </div>
@@ -62,8 +67,10 @@ const Portfolio = () => {
                     <img src={arrowMenu} width='100%' alt='Arrow Menu' />
                   </div>
                   <div
-                    className={portStyles.workSelect}
-                    onClick={handleShowFace}
+                    className={
+                      showFace ? portStyles.workSelect : portStyles.workUnselect
+                    }
+                    onClick={showFace ? null : handleShowFace}
                   >
                     FaceFwd
                   </div>
@@ -73,8 +80,10 @@ const Portfolio = () => {
                     <img src={arrowMenu} width='100%' alt='Arrow Menu' />
                   </div>
                   <div
-                    className={portStyles.workSelect}
-                    onClick={handleShowRec}
+                    className={
+                      showRec ? portStyles.workSelect : portStyles.workUnselect
+                    }
+                    onClick={showRec ? null : handleShowRec}
                   >
                     Recordify
                   </div>

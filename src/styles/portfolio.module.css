@@ -12,6 +12,13 @@
   }
 }
 
+.bottonOn {
+  background: red;
+}
+
+.bottonOff {
+  background: blue;
+}
 .flex_container_fluid {
   display: flex;
   justify-content: center;
