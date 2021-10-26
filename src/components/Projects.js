@@ -14,10 +14,10 @@ const Projects = () => {
       <div className={projectStyles.flex_container_fluid}>
         <div className={projectStyles.containerNavbar}>
           <div className={projectStyles.logoQuillok}>
-            <img src={QuillokLogo} alt="Quillok Logo" />
+            <img src={QuillokLogo} alt='Quillok Logo' />
           </div>
           <div className={projectStyles.backHome}>
-            <img src={BackHome} alt="back Home" />
+            <img src={BackHome} alt='back Home' />
           </div>
         </div>
         <div className={projectStyles.flex_container}>

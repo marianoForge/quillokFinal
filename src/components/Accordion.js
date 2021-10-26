@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import arrowMenu from '../images/work_arrow_menu.svg';
 import * as projectStyles from '../styles/projects.module.css';
 import { projects } from '../content/projects';
@@ -14,10 +14,24 @@ const Accordion = ({ title, content, status, image }) => {
             className={projectStyles.menuSelect}
             onClick={() => setIsActive(!isActive)}
           >
-            <div className={projectStyles.menuArrow}>
-              <img src={arrowMenu} width="100%" alt="Arrow Menu" />
+            <div
+              className={
+                isActive
+                  ? projectStyles.menuArrow
+                  : {
+                      /*ACA VA LA OTRA FLECHA*/
+                    }
+              }
+            >
+              <img src={arrowMenu} width='100%' alt='Arrow Menu' />
             </div>
-            <h2 className={projectStyles.workSelect}>{title}</h2>
+            <h2
+              className={
+                isActive ? projectStyles.workSelect : projectStyles.workUnselect
+              }
+            >
+              {title}
+            </h2>
           </div>
         </div>
         {isActive ? (
@@ -28,7 +42,7 @@ const Accordion = ({ title, content, status, image }) => {
         <div className={projectStyles.rightContent}>
           <div className={projectStyles.frameImageWork}>
             <div className={projectStyles.imageWork}>
-              <img src={image} width="100%" alt={title} />
+              <img src={image} width='100%' alt={title} />
             </div>
           </div>
         </div>
