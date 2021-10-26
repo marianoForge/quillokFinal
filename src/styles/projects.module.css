@@ -1,18 +1,38 @@
 .flex_container_fluid{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 0px;
+    background: #FAFAFA;
     background-image: url("../images/portfolioBGcircles.svg");
     background-repeat: no-repeat;
     background-position-x: -420px;
     background-position-y: 20px;
     overflow: hidden;
 }
+.containerNavbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 30px 0 0 0;
+    padding: 0 3%;
+    }
+    .logoQuillok{
+        cursor: pointer;
+    }
+    .logoQuillok img{
+        width: 90px;
+    }
+    .backHome{
+        cursor: pointer;
+    }
 .flex_container{
     max-width: 1440px;
     width: 100%;
-    margin: 60px auto 80px auto;
+    margin: 70px auto 80px auto;
     }
     .titleSection{
         font-family: "Inter";
@@ -43,7 +63,7 @@
                 font-weight: 400;
                 line-height: 24px;
                 padding: 2px 0 0 0;
-                margin: 5% 0 8% 0;
+                margin: 5% 0 2% 0;
                 }
         
             .menuSelect{
@@ -64,7 +84,6 @@
                     left: 18%;
                     z-index: 10;
                     font-size: 2em;
-                    /* font-size: clamp(1.6em, 2vw, 2em); */
                     font-weight: 500;
                     letter-spacing: -1px;
                     line-height: 0.2em;
@@ -98,19 +117,16 @@
                 }
                     .arrowUnselect{
                         position: relative;
-                        /* max-width: 36px; */
-                        /* width: clamp(2em, 6vw, 5em); */
                         align-self: center;
                         margin: 0 16px 0 0;
                     }
                     .workUnselect{
                         font-size: 2em;
-                        /* font-size: clamp(1.6em, 2vw, 2em); */
+                        color: #9B9B9B;
                         font-weight: 500;
                         letter-spacing: -1px;
                         line-height: 0.2em;
                     }
-                /* .unhighlight:active, */
                 .unhighlight:hover{
                     width: 170px;
                     background: #f9ff52;
@@ -146,6 +162,9 @@
 .flex_container_fluid{
     background-position-x: -620px;
 }
+.containerNavbar{
+    padding: 0 5%;
+    }
 .flex_container{
     flex-wrap: wrap;
     width: 100%;

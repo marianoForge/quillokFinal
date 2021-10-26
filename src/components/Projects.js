@@ -1,16 +1,25 @@
 import React from 'react';
 import { projects } from '../content/projects';
+import QuillokLogo from '../images/Quillok_Logo.svg';
+import BackHome from '../images/Back_Home.svg';
 import work1 from '../images/works_img_1.png';
 import work2 from '../images/works_img_2.png';
 import work3 from '../images/works_img_3.png';
 import Accordion from './Accordion';
-
 import * as projectStyles from '../styles/projects.module.css';
 
 const Projects = () => {
   return (
     <section>
       <div className={projectStyles.flex_container_fluid}>
+        <div className={projectStyles.containerNavbar}>
+          <div className={projectStyles.logoQuillok}>
+            <img src={QuillokLogo} alt="Quillok Logo" />
+          </div>
+          <div className={projectStyles.backHome}>
+            <img src={BackHome} alt="back Home" />
+          </div>
+        </div>
         <div className={projectStyles.flex_container}>
           <div className={projectStyles.titleSection}>See our Works</div>
           <div>

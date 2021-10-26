@@ -1,11 +1,9 @@
 import React from 'react';
-import { projects } from '../../content/projects';
 import * as portStyles from '../../styles/portfolio.module.css';
+import { projects } from '../../content/projects';
 import works from '../../images/works_img_2.png';
-// import imgArrowUnselect from "../images/work_arrowUnselect.svg";
 
 const Facefwd = () => {
-  console.log(projects);
 
   return (
     <div className={portStyles.rightContent}>
@@ -22,6 +20,7 @@ const Facefwd = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Facefwd;

@@ -5,226 +5,255 @@
   }
   75% {
     transform: scale(1.05);
+
   }
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
+/* @keyframes highlighting {
+  0% {
+    width: 60%;
+  }
+  75% {
+    width: 80%;
 
-.bottonOn {
-  background: red;
-}
+  }
+  100% {
+    width: 90%;
+  }
+} */
 
-.bottonOff {
-  background: blue;
-}
-.flex_container_fluid {
+.flex_container_fluid{
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0px;
-  background-image: url('../images/portfolioBGcircles.svg');
+  background-image: url("../images/portfolioBGcircles.svg");
   background-repeat: no-repeat;
   background-position-x: -320px;
   background-position-y: 80px;
   overflow: hidden;
 }
-.flex_container {
+.flex_container{
   max-width: 1440px;
   width: 100%;
   margin: 10% auto 5% auto;
-}
-.WorksTitle {
-  width: 100%;
-  margin-left: 9%;
-}
-.titleSection {
-  color: #bcbcbc;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-.subtitleSection {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 2.5em;
-  letter-spacing: -1px;
-  line-height: 1.2em;
-  margin: 0.1em 0 1em 0;
-}
-.WorksContent {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 9%;
-}
-.leftContent {
-  margin-top: 2%;
-}
-.WorksMenu {
-  display: flex;
-  flex-direction: column;
-}
-.btSelect {
-  display: flex;
-}
-.menuArrow {
-  position: relative;
-  left: 6%;
-  z-index: 10;
-  width: clamp(2em, 6vw, 5em);
-  align-self: center;
-}
-.workSelect {
-  position: relative;
-  left: 16%;
-  z-index: 10;
-  font-size: clamp(2em, 5vw, 4em);
-  font-weight: 400;
-  letter-spacing: -1px;
-}
-.highlight {
-  position: relative;
-  width: 90%;
-  padding: 2% 0;
-  margin-bottom: 10%;
-  background: #f9ff52;
-}
-.unhighlight {
-  display: flex;
-  width: 0px;
-  padding: 2% 0;
-  margin-bottom: 10%;
-  background: rgba(249, 255, 82);
-  transition: all 0.5s ease-out;
-}
-.unhighlight:hover {
-  width: 90%;
-  background: #f9ff52;
-}
+  }
+  .WorksTitle{
+    width: 100%;
+    margin-left: 9%;
+  }
+  .titleSection{
+    color: #BCBCBC;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    }
+    .subtitleSection{
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    margin: 0.1em 0 1em 0;
+    }
+  .WorksContent{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9%;
+    }
+    .leftContent{
+      margin-top: 2%;
+      width: 100%;
+      }
+      .WorksMenu{
+        display: flex;
+        flex-direction: column;
+        }
+        .btWorks{
+          display: flex;
+          padding: 2% 0;
+          margin: 2% 0;
+          }
+          .workSelect{
+            display: flex;
+            position: relative;
+            }
+            .textSelect{
+              font-size: clamp(2em, 5vw, 4em);
+              font-weight: 400;
+              letter-spacing: -2px;
+              }
+              .textUnselect{
+                font-size: clamp(2em, 5vw, 4em);
+                font-weight: 400;
+                letter-spacing: -2px;
+                color: #9B9B9B;
+                transition: all 0.5s ease-out;
+                  }
+                  .textUnselect:hover{
+                    cursor: pointer;
+                    color: black;
+                    position: relative;
+                    padding-left: 54px;
+                  }
+            .arrowSelect{
+              position: relative;
+              align-self: center;
+              margin: 0 2.4em 0 1em;
+            }
+            .arrowSelect img{
+              width: clamp(1.8em, 3vw, 3em);
+            }
+            .arrowUnselect{
+              display: none;
+            }
+        .highlight{
+          display: flex;
+          position: relative;
+          width: 90%;
+          background: #F9FF52;
+          /* animation-name: highlighting;
+          animation-duration: 0.5s;
+          animation-timing-function: ease-in-out; */
+        }
+        .unhighlight{
+          position: relative;
+          width: 0px;
+          background: rgba(249, 255, 82);
+          transition: all 0.5s ease-out;
+          }
+          .unhighlight:hover{
+            width: 90%;
+            background: #f9ff52;
+          }
 
-.workUnselect {
-  z-index: 10;
-  font-size: clamp(2em, 5vw, 4em);
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #9b9b9b;
-  transition: all 0.5s ease-out;
-}
-.workUnselect:hover {
-  cursor: pointer;
-  color: black;
-  position: relative;
-  padding-left: 34px;
-}
-.btMoreProjects {
-  display: flex;
-  margin-top: 8%;
-}
-.btMoreProjects:hover {
-  cursor: pointer;
-}
-.txtMoreProjects {
-  font-size: clamp(1em, 2vw, 1.1em);
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-decoration: underline 2px;
-  text-underline-offset: 3px;
-  padding: 10px 12px 16px 0;
-}
-.arrowMoreProjects {
-  align-self: center;
-}
 
-.rightContent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 9%;
-}
-.frameImageWork {
-  position: relative;
-  border: 2px #1c1c1c solid;
-  background: white;
-  top: -100px;
-  right: 4px;
-  margin: 0px;
-  padding: 0px;
-  animation-name: imageWork;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in-out;
-}
-.imageWork {
-  position: relative;
-  top: -4px;
-  left: -8px;
-}
-.workDescription {
-  display: flex;
-  justify-content: space-between;
-  width: 440px;
-  margin-top: -54px;
-  animation-name: imageWork;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in-out;
-}
-.numberDesc {
-  color: #1c1c1c;
-  font-size: 2em;
-  font-weight: 700;
-  padding: 0 14px 0 0;
-}
-.textDesc {
-  color: #1c1c1c;
-  font-size: 0.9em;
-  font-weight: 400;
-  line-height: 1.6em;
-  padding: 2px 0 0 0;
-}
+        .btMoreProjects{
+          display: flex;
+          margin-top: 8%;
+          }
+          .btMoreProjects:hover{
+            cursor: pointer;
+          }
+          .txtMoreProjects{
+            font-size: clamp(1em, 2vw, 1.1em);
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-decoration: underline 2px;
+            text-underline-offset: 3px;
+            padding: 10px 12px 16px 0;
+          }
+          .arrowMoreProjects{
+            align-self: center;
+          }
+
+    .rightContent{
+      display: flex; 
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+    }
+    .frameImageWork{
+      position: relative;
+      border: 2px #1C1C1C solid;
+      background: white;
+      top: -100px;
+      right: -8px;
+      margin: 0px;
+      padding: 0px;
+      animation-name: imageWork;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-in-out;
+      }
+      .imageWork{
+        position: relative;
+        top: -4px;
+        left: -8px;
+      }
+      .workDescription{
+        display: flex;
+        width: 440px;
+        margin-top: -54px;
+        margin-right: 5px;
+        margin-left: auto;
+        }
+        .numberDesc{
+          color: #1C1C1C;
+          font-size: 2em;
+          font-weight: 700;
+          padding: 0 14px 0 0;
+        }
+        .textDesc{
+          color: #1C1C1C;
+          font-size: 0.9em;
+          font-weight: 400;
+          line-height: 1.6em;
+          padding: 2px 0 0 0;
+        }
 
 /* MediaQuery MOBILE */
-@media (min-width: 0px) and (max-width: 980px) {
-  .flex_container_fluid {
+@media (min-width:0px) and (max-width:980px) {
+  .flex_container_fluid{
     background-size: cover;
     background-position-x: -500px;
     background-position-y: 40px;
   }
-  .flex_container {
-    margin: 10% auto 70px auto;
-  }
-  .WorksContent {
+  .flex_container{
+    margin: 10% 0px 70px 0px;
+    }
+  .WorksContent{
     flex-direction: column;
+    margin-right: 6%;
   }
-  .WorksTitle {
-    margin: 20px 0 130px 9%;
+  .WorksTitle{
+    margin: 20px 0 130px 7%;
   }
-  .frameImageWork {
-    align-self: center;
-    left: 8px;
-  }
-  .leftContent {
+  .leftContent{
     align-self: baseline;
     order: 2;
     margin-top: 0;
   }
-  .workDescription {
+  .rightContent{
+    width: 100%;
+  }
+  .frameImageWork{
+    align-self: center;
+    right: 0px;
+  }
+  .workDescription{
     flex-direction: column;
     width: 100%;
-    margin-top: -80px;
-    margin-bottom: 40px;
-  }
-  .numberDesc {
-    font-size: 2em;
-    font-weight: 600;
-    padding: 0 0 10px 0;
-  }
-  .textDesc {
-    font-size: 0.9em;
-    font-weight: 400;
-    line-height: 1.5em;
-    padding: 2px 0 0 0;
-  }
-  .btMoreProjects {
-    margin-top: 0;
-  }
+    margin: -80px 0 30px auto;
+    }
+    .numberDesc{
+      font-size: 2em;
+      font-weight: 600;
+      padding: 0 0 10px 0;
+    }
+    .textDesc{
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 1.5em;
+      padding: 2px 0 0 0;
+    }
+    .WorksMenu{
+      margin: 0 0 3% 0;
+      }
+    .btWorks{
+      margin: 0 0 0.2% 0;
+      }
+
+    .highlight{
+      padding: 0.7em 0;
+    }
+    .unhighlight{
+      padding: 0.7em 0;
+      }
+
+    .btMoreProjects{
+      margin-top: 0;
+      }
 }

@@ -220,12 +220,13 @@
     }
     .container_weDoItems{
         width: 100%;
-        padding: 4% 2% 0% 14%;
+        padding: 4% 2% 0% 12%;
     }
 
     .frameVideo{
         top: 80px;
         left: 4px;
+        margin-right: 8px;
     }
 
     .container_video{

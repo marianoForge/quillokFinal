@@ -4,6 +4,7 @@ import { projects } from '../../content/projects';
 import works from '../../images/works_img_3.png';
 
 const Recordify = () => {
+
   return (
     <div className={portStyles.rightContent}>
       <div className={portStyles.frameImageWork}>
@@ -19,6 +20,7 @@ const Recordify = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Recordify;

@@ -42,79 +42,114 @@ const Portfolio = () => {
           <h2 className={portStyles.titleSection}>PORTFOLIO</h2>
           <p className={portStyles.subtitleSection}>See our works</p>
         </div>
-        <div id='facefwd' className={portStyles.WorksContent}>
+        <div className={portStyles.WorksContent}>
+
           <div className={portStyles.leftContent}>
             <div className={portStyles.WorksMenu}>
-              <div className={portStyles.highlight}>
-                <div className={portStyles.btSelect}>
-                  <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} width='100%' alt='Arrow Menu' />
-                  </div>
+
+                <div className={portStyles.btWorks}>
                   <div
-                    className={
-                      showShelf
-                        ? portStyles.workSelect
-                        : portStyles.workUnselect
-                    }
+                    className={ showShelf ? portStyles.workSelect : portStyles.workUnselect }
                     onClick={showShelf ? null : handleShowShelf}
-                    disabled={true}
-                  >
-                    ShelfSet
+                    disabled={true} >
+
+                      <div className={ showShelf ? portStyles.highlight : portStyles.unhighlight }
+                      onClick={showShelf ? null : handleShowShelf}
+                      disabled={true} >
+
+                        <div className={ showShelf ? portStyles.arrowSelect : portStyles.arrowUnselect}
+                        onClick={showShelf ? null : handleShowShelf}
+                        disabled={true} >
+                          <img src={arrowMenu} alt='Arrow Menu' />
+                        </div>
+
+                        <div className={ showShelf ? portStyles.textSelect : portStyles.textUnselect}
+                        onClick={showShelf ? null : handleShowShelf}
+                        disabled={true} >ShelfSet</div>
+
+                      </div>
                   </div>
                 </div>
-                <div className={portStyles.btSelect}>
-                  <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} width='100%' alt='Arrow Menu' />
-                  </div>
+                
+                <div className={portStyles.btWorks}>
                   <div
-                    className={
-                      showFace ? portStyles.workSelect : portStyles.workUnselect
-                    }
+                    className={ showFace ? portStyles.workSelect : portStyles.workUnselect }
                     onClick={showFace ? null : handleShowFace}
-                  >
-                    FaceFwd
+                    disabled={true} >
+
+                      <div className={ showFace ? portStyles.highlight : portStyles.unhighlight }
+                      onClick={showFace ? null : handleShowFace}
+                      disabled={true} >
+
+                        <div className={ showFace ? portStyles.arrowSelect : portStyles.arrowUnselect}
+                        onClick={showFace ? null : handleShowFace}
+                        disabled={true} >
+                          <img src={arrowMenu} alt='Arrow Menu' />
+                        </div>
+
+                        <div className={ showFace ? portStyles.textSelect : portStyles.textUnselect}
+                        onClick={showFace ? null : handleShowFace}
+                        disabled={true} >FaceFwd</div>
+
+                      </div>
                   </div>
                 </div>
-                <div className={portStyles.btSelect}>
-                  <div className={portStyles.menuArrow}>
-                    <img src={arrowMenu} width='100%' alt='Arrow Menu' />
-                  </div>
+
+                <div className={portStyles.btWorks}>
                   <div
-                    className={
-                      showRec ? portStyles.workSelect : portStyles.workUnselect
-                    }
+                    className={ showRec ? portStyles.workSelect : portStyles.workUnselect }
                     onClick={showRec ? null : handleShowRec}
-                  >
-                    Recordify
+                    disabled={true} >
+
+                      <div className={ showRec ? portStyles.highlight : portStyles.unhighlight }
+                      onClick={showRec ? null : handleShowRec}
+                      disabled={true} >
+
+                        <div className={ showRec ? portStyles.arrowSelect : portStyles.arrowUnselect}
+                        onClick={showRec ? null : handleShowRec}
+                        disabled={true} >
+                          <img src={arrowMenu} alt='Arrow Menu' />
+                        </div>
+
+                        <div className={ showRec ? portStyles.textSelect : portStyles.textUnselect}
+                        onClick={showRec ? null : handleShowRec}
+                        disabled={true} >Recordify</div>
+
+                      </div>
                   </div>
                 </div>
+                
+            </div>
+
+            <div className={portStyles.btMoreProjects}>
+              <div className={portStyles.txtMoreProjects}>SEE MORE PROJECTS</div>
+              <div className={portStyles.arrowMoreProjects}>
+                <img src={moreProjects} width='100%' alt='More Projects' />
               </div>
             </div>
+
           </div>
+
+          <div className={portStyles.rightContent}>
+            {showShelf && (
+              <div>
+                <Shelfset />
+              </div>
+            )}
+            {showFace && (
+              <div>
+                <Facefwd />
+              </div>
+            )}
+            {showRec && (
+              <div>
+                <Recordify />
+              </div>
+            )}
+          </div>
+
         </div>
-        {showShelf && (
-          <div>
-            <Shelfset />
-          </div>
-        )}
-        {showFace && (
-          <div>
-            <Facefwd />
-          </div>
-        )}
-        {showRec && (
-          <div>
-            <Recordify />
-          </div>
-        )}
-        <div className={portStyles.WorksContent}>
-          <div className={portStyles.btMoreProjects}>
-            <div className={portStyles.txtMoreProjects}>SEE MORE PROJECTS</div>
-            <div className={portStyles.arrowMoreProjects}>
-              <img src={moreProjects} width='100%' alt='More Projects' />
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   );
