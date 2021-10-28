@@ -12,18 +12,6 @@
     transform: scale(1);
   }
 }
-/* @keyframes highlighting {
-  0% {
-    width: 60%;
-  }
-  75% {
-    width: 80%;
-
-  }
-  100% {
-    width: 90%;
-  }
-} */
 
 .flex_container_fluid{
   display: flex;
@@ -115,9 +103,6 @@
           position: relative;
           width: 90%;
           background: #F9FF52;
-          /* animation-name: highlighting;
-          animation-duration: 0.5s;
-          animation-timing-function: ease-in-out; */
         }
         .unhighlight{
           position: relative;
@@ -129,7 +114,6 @@
             width: 90%;
             background: #f9ff52;
           }
-
 
         .btMoreProjects{
           display: flex;
