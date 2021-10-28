@@ -14,14 +14,14 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Hero />
             <Services />
             <Process />
             <Portfolio />
             <Testimonials />
           </Route>
-          <Route path="/projects">
+          <Route path='/portfolio'>
             <Projects />
           </Route>
         </Switch>

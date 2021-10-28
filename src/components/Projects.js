@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { projects } from '../content/projects';
 import QuillokLogo from '../images/Quillok_Logo.svg';
 // import BackHome from '../images/Back_Home.svg';
@@ -18,9 +19,11 @@ const Projects = () => {
     <section>
       <div className={projectStyles.flex_container_fluid}>
         <div className={projectStyles.containerNavbar}>
-          <div className={projectStyles.logoQuillok}>
-            <img src={QuillokLogo} alt='Quillok Logo' />
-          </div>
+          <Link to={'/'}>
+            <div className={projectStyles.logoQuillok}>
+              <img src={QuillokLogo} alt='Quillok Logo' />
+            </div>
+          </Link>
           {/* <div className={projectStyles.backHome}>
             <img src={BackHome} alt='back Home' />
           </div> */}

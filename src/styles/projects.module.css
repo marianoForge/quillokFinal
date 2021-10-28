@@ -1,236 +1,233 @@
 @keyframes imageWork {
-    0% {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    75% {
-      transform: scale(1.05);
-  
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-
-.flex_container_fluid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-    background: #FAFAFA;
-    background-image: url("../images/portfolioBGcircles.svg");
-    background-repeat: no-repeat;
-    background-position-x: -420px;
-    background-position-y: 20px;
-    overflow: hidden;
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-.containerNavbar{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
-    margin: 30px 0 0 0;
-    padding: 0 3%;
-    }
-    .logoQuillok{
-        cursor: pointer;
-    }
-    .logoQuillok img{
-        width: 90px;
-    }
-    .backHome{
-        cursor: pointer;
-    }
-.flex_container{
-    max-width: 1440px;
-    width: 100%;
-    margin: 70px auto 80px auto;
-    }
-    .titleSection{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 2.5em;
-        letter-spacing: -1px;
-        line-height: 1.2em;
-        margin: 0.1em 0 60px 10%;
-        }
-    .workContent{
-        display: flex;
-        justify-content: space-between;
-        margin: 0px 0px 50px 0px;
-        }
-        .leftContent{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 40%;
-            /* max-width: 470px; */
-            margin: 0px 30px 0px 10%;
-            }
-            .descriptionWork{
-                font-family: "Inter";
-                color: #1C1C1C;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 24px;
-                padding: 2px 0 0 0;
-                margin: 5% 0 6% 0;
-                }
-                
-            .btWorks{
-                display: flex;
-                width: 100%;
-                cursor: pointer;
-                }
-                .workSelect{
-                    display: flex;
-                    position: relaaative;
-                    width: 100%;
-                    }
-                .workUnselect{
-                    display: flex;
-                    position: relative;
-                    width: 100%;
-                    margin-top: -40px;
-                    }
-                    .textSelect{
-                    display: flex;
-                    align-items: center;
-                    font-size: 2em;
-                    font-weight: 500;
-                    letter-spacing: -1px;
-                    }
-                    .textUnselect{
-                        display: flex;
-                        align-items: center;
-                        font-size: 2em;
-                        font-weight: 500;
-                        letter-spacing: -1px;
-                        color: #9B9B9B;
-                        transition: all 0.5s ease-out;
-                        }
-                            .textUnselect:hover{
-                                padding-left: 8px;
-                            }
-                    .arrowSelect{
-                    position: relative;
-                    align-self: center;
-                    margin: 1em;
-                        }
-                        .arrowSelect img{
-                            width: 40px;
-                        }
-                .arrowUnselect{
-                    position: relative;
-                    align-self: center;
-                    margin: 1em;
-                    transform: rotate(-90deg);
-                    opacity: 0.4;
-                    }
-                    .arrowUnselect img{
-                        width: 40px;
-                    }
-                    
-                .highlight{
-                display: flex;
-                position: relative;
-                width: 180px;
-                background: #F9FF52;
-                }
-                .unhighlight{
-                    display: flex;
-                    position: relative;
-                    width: 0px;
-                    background: rgba(249, 255, 82);
-                    transition: all 0.5s ease-out;
-                    }
-                    .unhighlight:hover{
-                        width: 180px;
-                        background: #f9ff52;
-                    }
-        .rightContent{
-            display: flex;
-            justify-content: center;
-            width: 60%;
-            margin: 0px 0% 0px 20px;
-            }
-            .frameImageWork{
-                position: relative;
-                align-self: flex-start;
-                border: 2px #1C1C1C solid;
-                background: white;
-                max-width: 470px;
-                top: -10px;
-                animation-name: imageWork;
+
+.flex_container_fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  background: #fafafa;
+  background-image: url('../images/portfolioBGcircles.svg');
+  background-repeat: no-repeat;
+  background-position-x: -420px;
+  background-position-y: 20px;
+  overflow: hidden;
+}
+.containerNavbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 0 3%;
+}
+.logoQuillok {
+  cursor: pointer;
+}
+.logoQuillok img {
+  width: 90px;
+}
+.backHome {
+  cursor: pointer;
+}
+.flex_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 70px auto 80px auto;
+}
+.titleSection {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  margin: 0.1em 0 60px 10%;
+}
+.workContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 0px;
+}
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  /* max-width: 470px; */
+  margin: 0px 30px 0px 10%;
+}
+.descriptionWork {
+  font-family: 'Inter';
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 2px 0 0 0;
+  margin: 5% 0 6% 0;
+}
+
+.btWorks {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+.workSelect {
+  display: flex;
+  position: relaaative;
+  width: 100%;
+}
+.workUnselect {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: -40px;
+}
+.textSelect {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.textUnselect {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #9b9b9b;
+  transition: all 0.5s ease-out;
+}
+.textUnselect:hover {
+  padding-left: 8px;
+}
+.arrowSelect {
+  position: relative;
+  align-self: center;
+  margin: 1em;
+}
+.arrowSelect img {
+  width: 40px;
+}
+.arrowUnselect {
+  position: relative;
+  align-self: center;
+  margin: 1em;
+  transform: rotate(-90deg);
+  opacity: 0.4;
+}
+.arrowUnselect img {
+  width: 40px;
+}
+
+.highlight {
+  display: flex;
+  position: relative;
+  width: 180px;
+  background: #f9ff52;
+}
+.unhighlight {
+  display: flex;
+  position: relative;
+  width: 0px;
+  background: rgba(249, 255, 82);
+  transition: all 0.5s ease-out;
+}
+.unhighlight:hover {
+  width: 180px;
+  background: #f9ff52;
+}
+.rightContent {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0px 0% 0px 20px;
+}
+.frameImageWork {
+  position: relative;
+  align-self: flex-start;
+  border: 2px #1c1c1c solid;
+  background: white;
+  max-width: 470px;
+  top: -10px;
+  /* animation-name: imageWork;
                 animation-duration: 0.8s;
-                animation-timing-function: ease-in-out;
-                }
-            .imageWork{
-                position: relative;
-                top: -13px;
-                left: -15px;
-            }
+                animation-timing-function: ease-in-out; */
+}
+.imageWork {
+  position: relative;
+  top: -13px;
+  left: -15px;
+}
 
 /* MediaQuery MOBILE */
-@media (min-width:0px) and (max-width:980px) {
+@media (min-width: 0px) and (max-width: 980px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
 
-    * {
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .flex_container_fluid{
-        background-position-x: -620px;
-            }
-        .containerNavbar{
-            padding: 0 5%;
-            }
-        .flex_container{
-            flex-wrap: wrap;
-            width: 100%;
-            }
-            .titleSection{
-                margin: 0.1em 0 80px 5%;
-                padding-right: 10%;
-            }
-            .workContent{
-                flex-wrap: wrap;
-                }
-                .leftContent{   
-                    width: 100%;
-                    margin: 0px 5% 0px 5%;
-                    }
-                    .btWorks{
-                        display: flex;
-                        padding: 0;
-                        margin: 0 0 2% 0;
-                        width: 100%;
-                        cursor: pointer;
-                        }
-                        .textUnselect{
-                            transition: all 0.5s ease-out;
-                            padding-left: 0px;
-                            }
-                        .unhighlight{
-                            transition: all 0.5s ease-out;
-                            width: 0px;
-                            }
-                        .textUnselect:hover{
-                            padding-left: 0px;
-                            }
-                        .unhighlight:hover{
-                            width: 0px;
-                            }
-                    
-        .rightContent{
-            width: 100%;
-            padding: 0 6% 0 3%;
-            }
-            .frameImageWork{
-                max-width: 680px;
-                width: 100%;
-                }
+  .flex_container_fluid {
+    background-position-x: -620px;
+  }
+  .containerNavbar {
+    padding: 0 5%;
+  }
+  .flex_container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .titleSection {
+    margin: 0.1em 0 80px 5%;
+    padding-right: 10%;
+  }
+  .workContent {
+    flex-wrap: wrap;
+  }
+  .leftContent {
+    width: 100%;
+    margin: 0px 5% 0px 5%;
+  }
+  .btWorks {
+    display: flex;
+    padding: 0;
+    margin: 0 0 2% 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  .textUnselect {
+    transition: all 0.5s ease-out;
+    padding-left: 0px;
+  }
+  .unhighlight {
+    transition: all 0.5s ease-out;
+    width: 0px;
+  }
+  .textUnselect:hover {
+    padding-left: 0px;
+  }
+  .unhighlight:hover {
+    width: 0px;
+  }
 
+  .rightContent {
+    width: 100%;
+    padding: 0 6% 0 3%;
+  }
+  .frameImageWork {
+    max-width: 680px;
+    width: 100%;
+  }
 }

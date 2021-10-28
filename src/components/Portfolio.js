@@ -175,7 +175,7 @@ const Portfolio = () => {
 
             <div className={portStyles.btMoreProjects}>
               <div className={portStyles.txtMoreProjects}>
-                <Link to='/projects'>SEE MORE PROJECTS</Link>
+                <Link to='/portfolio'>SEE MORE PROJECTS</Link>
               </div>
               <div className={portStyles.arrowMoreProjects}>
                 <img src={moreProjects} width='100%' alt='More Projects' />

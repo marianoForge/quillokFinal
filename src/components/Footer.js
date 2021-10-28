@@ -22,8 +22,7 @@ const Footer = () => {
             <div className={footerStyles.contact_title}>Contact</div>
             <Link
               to={{
-                pathname:
-                  'mailto:hello@quillok.com?subject=Let%E2%80%99s%20do%20great%20stuff%20together!',
+                pathname: 'https://3aovymwpm25.typeform.com/to/zrH7Qc2A',
               }}
               className={footerStyles.contact_mail}
             >

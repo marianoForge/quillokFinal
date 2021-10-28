@@ -5,7 +5,6 @@
   }
   75% {
     transform: scale(1.05);
-
   }
   100% {
     opacity: 1;
@@ -13,234 +12,234 @@
   }
 }
 
-.flex_container_fluid{
+.flex_container_fluid {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0px;
-  background-image: url("../images/portfolioBGcircles.svg");
+  background-image: url('../images/portfolioBGcircles.svg');
   background-repeat: no-repeat;
   background-position-x: -320px;
   background-position-y: 80px;
   overflow: hidden;
 }
-.flex_container{
+.flex_container {
   max-width: 1440px;
   width: 100%;
   margin: 10% auto 5% auto;
-  }
-  .WorksTitle{
-    width: 100%;
-    margin-left: 9%;
-  }
-  .titleSection{
-    color: #BCBCBC;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    }
-    .subtitleSection{
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 2.5em;
-    letter-spacing: -1px;
-    line-height: 1.2em;
-    margin: 0.15em 0 1em 0;
-    }
-  .WorksContent{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 9%;
-    }
-    .leftContent{
-      margin-top: 2%;
-      width: 100%;
-      }
-      .WorksMenu{
-        display: flex;
-        flex-direction: column;
-        }
-        .btWorks{
-          display: flex;
-          padding: 2% 0;
-          margin: 2% 0;
-          }
-          .workSelect{
-            display: flex;
-            position: relative;
-            }
-            .textSelect{
-              font-size: clamp(2em, 5vw, 4em);
-              font-weight: 400;
-              letter-spacing: -2px;
-              }
-              .textUnselect{
-                font-size: clamp(2em, 5vw, 4em);
-                font-weight: 400;
-                letter-spacing: -2px;
-                color: #9B9B9B;
-                transition: all 0.5s ease-out;
-                  }
-                  .textUnselect:hover{
-                    cursor: pointer;
-                    color: black;
-                    position: relative;
-                    padding-left: 54px;
-                  }
-            .arrowSelect{
-              position: relative;
-              align-self: center;
-              margin: 0 2.4em 0 1em;
-            }
-            .arrowSelect img{
-              width: clamp(1.8em, 3vw, 3em);
-            }
-            .arrowUnselect{
-              display: none;
-            }
-        .highlight{
-          display: flex;
-          position: relative;
-          width: 90%;
-          background: #F9FF52;
-        }
-        .unhighlight{
-          position: relative;
-          width: 0px;
-          background: rgba(249, 255, 82);
-          transition: all 0.5s ease-out;
-          }
-          .unhighlight:hover{
-            width: 90%;
-            background: #f9ff52;
-          }
+}
+.WorksTitle {
+  width: 100%;
+  margin-left: 9%;
+}
+.titleSection {
+  color: #bcbcbc;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.subtitleSection {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  margin: 0.15em 0 1em 0;
+}
+.WorksContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 9%;
+}
+.leftContent {
+  margin-top: 2%;
+  width: 100%;
+}
+.WorksMenu {
+  display: flex;
+  flex-direction: column;
+}
+.btWorks {
+  display: flex;
+  padding: 2% 0;
+  margin: 2% 0;
+}
+.workSelect {
+  display: flex;
+  position: relative;
+}
+.textSelect {
+  font-size: clamp(2em, 5vw, 4em);
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.textUnselect {
+  font-size: clamp(2em, 5vw, 4em);
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: #9b9b9b;
+  transition: all 0.5s ease-out;
+}
+.textUnselect:hover {
+  cursor: pointer;
+  color: black;
+  position: relative;
+  padding-left: 54px;
+}
+.arrowSelect {
+  position: relative;
+  align-self: center;
+  margin: 0 2.4em 0 1em;
+}
+.arrowSelect img {
+  width: clamp(1.8em, 3vw, 3em);
+}
+.arrowUnselect {
+  display: none;
+}
+.highlight {
+  display: flex;
+  position: relative;
+  width: 90%;
+  background: #f9ff52;
+}
+.unhighlight {
+  position: relative;
+  width: 0px;
+  background: rgba(249, 255, 82);
+  transition: all 0.5s ease-out;
+}
+.unhighlight:hover {
+  width: 90%;
+  background: #f9ff52;
+}
 
-        .btMoreProjects{
-          display: flex;
-          margin-top: 8%;
-          }
-          .btMoreProjects:hover{
-            cursor: pointer;
-          }
-          .txtMoreProjects{
-            font-size: clamp(1em, 2vw, 1.1em);
-            letter-spacing: 1px;
-            font-weight: 700;
-            text-decoration: underline 2px;
-            text-underline-offset: 3px;
-            padding: 10px 12px 16px 0;
-          }
-          .arrowMoreProjects{
-            align-self: center;
-          }
+.btMoreProjects {
+  display: flex;
+  margin-top: 8%;
+}
+.btMoreProjects:hover {
+  cursor: pointer;
+}
+.txtMoreProjects {
+  font-size: clamp(1em, 2vw, 1.1em);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
+  padding: 10px 12px 16px 0;
+}
+.arrowMoreProjects {
+  align-self: center;
+}
 
-    .rightContent{
-      display: flex; 
-      flex-direction: column;
-      align-items: flex-end;
-      width: 100%;
-    }
-    .frameImageWork{
-      position: relative;
-      border: 2px #1C1C1C solid;
-      background: white;
-      top: -100px;
-      right: -8px;
-      margin: 0px;
-      padding: 0px;
-      animation-name: imageWork;
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.frameImageWork {
+  position: relative;
+  border: 2px #1c1c1c solid;
+  background: white;
+  top: -100px;
+  right: -8px;
+  margin: 0px;
+  padding: 0px;
+  /* animation-name: imageWork;
       animation-duration: 0.8s;
-      animation-timing-function: ease-in-out;
-      }
-      .imageWork{
-        position: relative;
-        top: -4px;
-        left: -8px;
-      }
-      .workDescription{
-        display: flex;
-        width: 440px;
-        margin-top: -54px;
-        margin-right: 5px;
-        margin-left: auto;
-        }
-        .numberDesc{
-          color: #1C1C1C;
-          font-size: 2em;
-          font-weight: 700;
-          padding: 0 14px 0 0;
-        }
-        .textDesc{
-          color: #1C1C1C;
-          font-size: 0.9em;
-          font-weight: 400;
-          line-height: 1.6em;
-          padding: 2px 0 0 0;
-        }
+      animation-timing-function: ease-in-out; */
+}
+.imageWork {
+  position: relative;
+  top: -4px;
+  left: -8px;
+}
+.workDescription {
+  display: flex;
+  width: 440px;
+  margin-top: -54px;
+  margin-right: 5px;
+  margin-left: auto;
+}
+.numberDesc {
+  color: #1c1c1c;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 0 14px 0 0;
+}
+.textDesc {
+  color: #1c1c1c;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding: 2px 0 0 0;
+}
 
 /* MediaQuery MOBILE */
-@media (min-width:0px) and (max-width:980px) {
-  .flex_container_fluid{
+@media (min-width: 0px) and (max-width: 980px) {
+  .flex_container_fluid {
     background-size: cover;
     background-position-x: -500px;
     background-position-y: 40px;
   }
-  .flex_container{
+  .flex_container {
     margin: 10% 0px 70px 0px;
-    }
-    .subtitleSection{
-      margin: 0.15em 30% 1em 0;
-      }
-  .WorksContent{
+  }
+  .subtitleSection {
+    margin: 0.15em 30% 1em 0;
+  }
+  .WorksContent {
     flex-direction: column;
     margin-right: 6%;
   }
-  .WorksTitle{
+  .WorksTitle {
     margin: 20px 0 130px 7%;
   }
-  .leftContent{
+  .leftContent {
     align-self: baseline;
     order: 2;
     margin-top: 0;
   }
-  .rightContent{
+  .rightContent {
     width: 100%;
   }
-  .frameImageWork{
+  .frameImageWork {
     align-self: center;
     right: 0px;
   }
-  .workDescription{
+  .workDescription {
     flex-direction: column;
     width: 100%;
     margin: -80px 0 30px auto;
-    }
-    .numberDesc{
-      font-size: 2em;
-      font-weight: 600;
-      padding: 0 0 10px 0;
-    }
-    .textDesc{
-      font-size: 1em;
-      font-weight: 400;
-      line-height: 1.5em;
-      padding: 2px 0 0 0;
-    }
-    .WorksMenu{
-      margin: 0 0 3% 0;
-      }
-    .btWorks{
-      margin: 0 0 0.2% 0;
-      }
+  }
+  .numberDesc {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+  }
+  .textDesc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 2px 0 0 0;
+  }
+  .WorksMenu {
+    margin: 0 0 3% 0;
+  }
+  .btWorks {
+    margin: 0 0 0.2% 0;
+  }
 
-    .highlight{
-      padding: 0.7em 0;
-    }
-    .unhighlight{
-      padding: 0.7em 0;
-      }
+  .highlight {
+    padding: 0.7em 0;
+  }
+  .unhighlight {
+    padding: 0.7em 0;
+  }
 
-    .btMoreProjects{
-      margin-top: 0;
-      }
+  .btMoreProjects {
+    margin-top: 0;
+  }
 }
