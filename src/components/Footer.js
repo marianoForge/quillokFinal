@@ -24,6 +24,7 @@ const Footer = () => {
               to={{
                 pathname: 'https://3aovymwpm25.typeform.com/to/zrH7Qc2A',
               }}
+              target='_blank'
               className={footerStyles.contact_mail}
             >
               hello@quillok.com
