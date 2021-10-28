@@ -4,7 +4,6 @@ import { projects } from '../../content/projects';
 import works from '../../images/works_img_2.png';
 
 const Facefwd = () => {
-
   return (
     <div className={portStyles.rightContent}>
       <div className={portStyles.frameImageWork}>
@@ -20,7 +19,6 @@ const Facefwd = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Facefwd;
