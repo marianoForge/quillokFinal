@@ -9,10 +9,10 @@ const Accordion = ({
   content3,
   content4,
   content5,
-  status,
+
   image,
 }) => {
-  const [isActive, setIsActive] = useState(status);
+  const [isActive, setIsActive] = useState(true);
 
   return (
     <div className={projectStyles.workContent}>

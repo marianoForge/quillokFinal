@@ -54,28 +54,7 @@ const Projects = () => {
                     return null;
                 }
               };
-              const status = () => {
-                switch (project.id) {
-                  case 1:
-                    return true;
-                  case 2:
-                    return false;
-                  case 3:
-                    return false;
-                  case 4:
-                    return false;
-                  case 5:
-                    return false;
-                  case 6:
-                    return false;
-                  case 7:
-                    return false;
-                  case 8:
-                    return false;
-                  default:
-                    return null;
-                }
-              };
+
               return (
                 <React.Fragment key={project.id}>
                   <Accordion
@@ -85,7 +64,6 @@ const Projects = () => {
                     content3={project.content3}
                     content4={project.content4}
                     content5={project.content5}
-                    status={status}
                     image={img()}
                   />
                 </React.Fragment>
