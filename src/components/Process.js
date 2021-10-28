@@ -4,7 +4,6 @@ import process1 from '../images/process_img_1.jpg';
 import process2 from '../images/process_img_2.jpg';
 import process3 from '../images/process_img_3.jpg';
 import process4 from '../images/process_img_4.jpg';
-// import previewVideo from "../images/process_preview_video.jpg";
 import arrowWhite from '../images/process_arrow_white.svg';
 import arrowYellow from '../images/process_arrow_yellow.svg';
 import * as processStyles from '../styles/process.module.css';
