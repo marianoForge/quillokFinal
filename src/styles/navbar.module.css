@@ -9,27 +9,27 @@
   overflow: hidden;
 }
 .flex_container{
-  z-index: 10;
   width: 100%;
   max-width: 1440px;
   margin: 0px;
   padding-left: 9%;
   padding-top: 40px;
 }
-.bg_circles{
+/* .bg_circles{
   position: absolute;
   z-index: 0;
   width: 100%;
   text-align: right;
-  height: 200vh;
+  right: -200px;
+  top: 0;
+  height: 250vh;
   overflow: hidden;
-  }
-  .bg_circles img{
-    position: relative;
-    top: 542px;
-    right: -200px;
-    transform: rotateZ(-30deg);
-    }
+}
+.bg_circles img{
+  position: relative;
+  transform: rotateZ(-30deg);
+  
+    } */
 
 /* MediaQuery TABLET */
 @media (min-width:701px) and (max-width:1000px) {
@@ -52,16 +52,5 @@
   .logoQuillok img{
     width: 90px;
   }
-  .bg_circles{
-    text-align: left;
-    overflow: hidden;
-    }
-    .bg_circles img{
-      position: absolute;
-      width: 650px;
-      top: 53%;
-      right: -150px;
-      transform: rotateZ(45deg);
-      }
 
 }

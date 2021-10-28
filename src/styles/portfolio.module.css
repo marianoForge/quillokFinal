@@ -57,7 +57,7 @@
     font-size: 2.5em;
     letter-spacing: -1px;
     line-height: 1.2em;
-    margin: 0.1em 0 1em 0;
+    margin: 0.15em 0 1em 0;
     }
   .WorksContent{
     display: flex;
@@ -204,6 +204,9 @@
   .flex_container{
     margin: 10% 0px 70px 0px;
     }
+    .subtitleSection{
+      margin: 0.15em 30% 1em 0;
+      }
   .WorksContent{
     flex-direction: column;
     margin-right: 6%;

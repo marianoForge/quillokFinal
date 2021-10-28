@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
+// import {Link } from "react-router-dom";
 import process1 from "../images/process_img_1.jpg";
 import process2 from "../images/process_img_2.jpg";
 import process3 from "../images/process_img_3.jpg";
 import process4 from "../images/process_img_4.jpg";
-import previewVideo from "../images/process_preview_video.jpg";
+// import previewVideo from "../images/process_preview_video.jpg";
 import arrowWhite from "../images/process_arrow_white.svg";
 import arrowYellow from "../images/process_arrow_yellow.svg";
 import * as processStyles from "../styles/process.module.css";
@@ -59,17 +60,13 @@ const Process = () => {
         <div className={processStyles.container_process}>
           <div className={processStyles.container_howWedo}>
             <h2 className={processStyles.titleSection}>PROCESS</h2>
-            <p className={processStyles.subtitleSection}>And how we do it...</p>
+            <p className={processStyles.subtitleSection}>And this is how we do it.</p>
             <div className={processStyles.descriptionSection}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Tristique mauris mattis facilisi vedivpellentesque aliquet lorem
-                viverra nunc tincidunt.
+              Every successful piece of software needs a plan in place.
               </p>
               <p>
-                Condimentum scelerisque sed at quis sit magna quam nisl cursus
-                quam sed non fames adipiscing enim varius libero ullamcorper
-                enim non aliquam duis.
+              Our seasoned engineers understand that every part of the development process is important and know how to leverage every stage to bring you the most value.
               </p>
             </div>
           </div>
@@ -173,25 +170,29 @@ const Process = () => {
           </div>
 
           <div
-            className={processStyles.frameVideo}
+            className={processStyles.frameScheMeet}
             // data-aos="fade-up"
             // data-aos-delay="0"
             // data-aos-duration="1000"
           >
-            <div className={processStyles.container_video}>
-              <div className={processStyles.video_text}>
+            <div className={processStyles.containerScheMeet}>
+              
+              <div className={processStyles.textScheMeet}>
                 <p>
-                  We see ourselves as product craftsmen, taking a holistic
-                  approach to software engineering, where we give code quality,
-                  UI & UX design, and product management the same love.
+                We see ourselves as product craftsmen, taking a holistic approach to software engineering, where we give code quality, UI & UX design, and product management the same love. Want to know more?
                 </p>
+              </div>
+              {/* <Link className={processStyles.btn_scheMeet} to="https://calendly.com/quillok/30min" target={"_blank"}> */}
+
                 <div className={processStyles.btn_scheMeet}>
-                  SCHEDULE A MEETING
+                  <div>
+                    SCHEDULE A MEETING
+                  </div>
                 </div>
-              </div>
-              <div className={processStyles.video_preview}>
-                <img src={previewVideo} width="100%" alt="Demo" />
-              </div>
+
+              {/* </Link> */}
+              
+
             </div>
           </div>
         </div>

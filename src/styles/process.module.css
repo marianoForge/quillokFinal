@@ -63,8 +63,7 @@
             font-size: 2.5em;
             line-height: 1.2em;
             letter-spacing: -1px;
-            padding-right: 20%;
-            margin: 0.1em 0 0.5em 0;
+            margin: 0.15em 0 0.5em 0;
             }
             .descriptionSection p{
             color: rgba(255, 255, 255, 0.6);
@@ -133,51 +132,48 @@
                 padding-left: 1.8em;
                 margin-top: -10px;
             }
-    .frameVideo{
+    .frameScheMeet{
         position: relative;
         border: 2px #1C1C1C solid;
-        top: 130px;
+        top: 120px;
         left: 8px;
         margin: 0;
         padding: 0;
     }
-    .container_video{
+    .containerScheMeet{
         background: #F9FF52;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         position: relative;
         top: -8px;
         left: -8px;
+        padding: 2% 4% 0 4%;
         }
-        .video_text{
-            width: 60%;
+        .textScheMeet{
             font-weight: 400;
             letter-spacing: -1px;
-            font-size: clamp(1em, 2.2vw, 2em);
-            padding: 2% 4% 0 4%;
+            font-size: clamp(1.5em, 2.2vw, 2em);
         }
         .btn_scheMeet{
             background: #1C1C1C;
-            color: white;
             width: 256px;
             height: 56px;
-            margin-top: 8%;
+            margin: 2% 0 6% 0;
             padding: 1em 0;
+            text-align: center;
+        }
+        .btn_scheMeet div{
+            color: white;
             font-size: 17px;
             font-weight: 600;
             letter-spacing: 1px;
-            text-align: center;
+
             }
             .btn_scheMeet:hover{
                 background: black;
                 cursor: pointer;
             }
-        .video_preview{
-            display: flex;
-            align-self: center;
-            background: #1C1C1C;
-            margin: 0 0 0 10px;
-        }
+
 
     /* MediaQuery MOBILE */
 @media (min-width:0px) and (max-width:720px) {
@@ -215,6 +211,10 @@
         padding: 4% 5% 0% 7%;
     }
 
+    .subtitleSection{
+        padding-right: 15%;
+        }
+
     .container_howWedo{
         width: 100%;
     }
@@ -223,36 +223,32 @@
         padding: 4% 2% 0% 12%;
     }
 
-    .frameVideo{
+    .frameScheMeet{
         top: 80px;
         left: 4px;
         margin-right: 8px;
     }
 
-    .container_video{
+    .containerScheMeet{
         flex-direction: column;
         align-items: center;
+        padding: 2% 7% 10% 7%;
         }
-        .video_text{
-            order: 2;
-            font-size: 1.5em;
+        .textScheMeet p{
+            font-size: 24px;
+            line-height: 40px;
             width: 100%;
-            padding: 2% 4% 0 4%;
+            /* padding: 2% 3% 0 4%; */
         }
         .btn_scheMeet{
             width: 100%;
-            margin: 10% 0;
+            margin: 4% 0;
             /* padding: 0.8em 0;
             font-size: 17px;
             font-weight: 600;
             letter-spacing: 1px;
             text-align: center; */
             }
-            .video_preview{
-                text-align: center;
-                width: 100%;
-                order: 1;
-                margin: 0;
-            }
+
 
 }

@@ -5,6 +5,11 @@ import BackHome from '../images/Back_Home.svg';
 import work1 from '../images/works_img_1.png';
 import work2 from '../images/works_img_2.png';
 import work3 from '../images/works_img_3.png';
+import work4 from '../images/works_img_4.png';
+import work5 from '../images/works_img_5.png';
+import work6 from '../images/works_img_6.png';
+import work7 from '../images/works_img_7.png';
+import work8 from '../images/works_img_8.png';
 import Accordion from './Accordion';
 import * as projectStyles from '../styles/projects.module.css';
 
@@ -21,7 +26,7 @@ const Projects = () => {
           </div>
         </div>
         <div className={projectStyles.flex_container}>
-          <div className={projectStyles.titleSection}>See our Works</div>
+          <div className={projectStyles.titleSection}>Work we’re proud of</div>
           <div>
             {projects.map((project) => {
               const img = () => {
@@ -32,6 +37,16 @@ const Projects = () => {
                     return work2;
                   case 3:
                     return work3;
+                  case 4:
+                    return work4;
+                  case 5:
+                    return work5;
+                  case 6:
+                    return work6;
+                  case 7:
+                    return work7;
+                  case 8:
+                    return work8;
                   default:
                     return null;
                 }
@@ -44,6 +59,16 @@ const Projects = () => {
                     return false;
                   case 3:
                     return false;
+                  case 4:
+                    return false;
+                  case 5:
+                    return false;
+                  case 6:
+                    return false;
+                  case 7:
+                    return false;
+                  case 8:
+                    return false;
                   default:
                     return null;
                 }
@@ -52,7 +77,11 @@ const Projects = () => {
                 <React.Fragment key={project.id}>
                   <Accordion
                     title={project.title}
-                    content={project.content}
+                    content1={project.content1}
+                    content2={project.content2}
+                    content3={project.content3}
+                    content4={project.content4}
+                    content5={project.content5}
                     status={status}
                     image={img()}
                   />

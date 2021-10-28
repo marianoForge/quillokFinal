@@ -1,6 +1,5 @@
 import React from 'react';
 import QuillokLogo from '../images/Quillok_Logo.svg';
-import HomeBGcircles from '../images/homeBGcircles.svg';
 import * as navbarStyles from '../styles/navbar.module.css';
 
 const Navbar = () => {
@@ -10,9 +9,6 @@ const Navbar = () => {
         <div className={navbarStyles.logoQuillok}>
           <img src={QuillokLogo} alt="Quillok Logo" />
         </div>
-      </div>
-      <div className={navbarStyles.bg_circles}>
-        <img src={HomeBGcircles} alt="" />
       </div>
     </div>
   );

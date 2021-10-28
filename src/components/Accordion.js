@@ -1,41 +1,45 @@
 import React, { useState } from 'react';
-import arrowMenu from '../images/work_arrow_menu.svg';
+import arrowMenu from '../images/work_arrow_projects.svg';
 import * as projectStyles from '../styles/projects.module.css';
 import { projects } from '../content/projects';
 
-const Accordion = ({ title, content, status, image }) => {
+const Accordion = ({ title, content1, content2, content3, content4, content5, status, image }) => {
   const [isActive, setIsActive] = useState(status);
 
   return (
     <div className={projectStyles.workContent}>
       <div className={projectStyles.leftContent}>
-        <div className={projectStyles.highlight}>
-          <div
-            className={projectStyles.menuSelect}
-            onClick={() => setIsActive(!isActive)}
-          >
-            <div
-              className={
-                isActive
-                  ? projectStyles.menuArrow
-                  : {
-                      /*ACA VA LA OTRA FLECHA*/
-                    }
-              }
-            >
-              <img src={arrowMenu} width='100%' alt='Arrow Menu' />
+
+        <div className={projectStyles.btWorks}>
+
+          <div className={ isActive ? projectStyles.workSelect : projectStyles.workUnselect } onClick={() => setIsActive(!isActive)} >
+
+            <div className={ isActive ? projectStyles.highlight : projectStyles.unhighlight} >
+
+              <div className={ isActive ? projectStyles.arrowSelect : projectStyles.arrowUnselect}>
+                <img src={arrowMenu} alt='Arrow Menu' />
+              </div>
+
+              <div className={ isActive ? projectStyles.textSelect : projectStyles.textUnselect }>
+                {title}
+              </div>
+
             </div>
-            <h2
-              className={
-                isActive ? projectStyles.workSelect : projectStyles.workUnselect
-              }
-            >
-              {title}
-            </h2>
+
           </div>
+
         </div>
+
         {isActive ? (
-          <p className={projectStyles.descriptionWork}>{content}</p>
+          <div className={projectStyles.descriptionWork}>
+            <p>{content1}</p>
+            <p>{content2}</p>
+            <p>{content3}</p>
+            <p><strong>{content4}</strong>
+            <br></br>
+            {content5}
+            </p>
+          </div>
         ) : null}
       </div>
       {isActive ? (

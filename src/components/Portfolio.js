@@ -40,7 +40,7 @@ const Portfolio = () => {
       <div className={portStyles.flex_container}>
         <div className={portStyles.WorksTitle}>
           <h2 className={portStyles.titleSection}>PORTFOLIO</h2>
-          <p className={portStyles.subtitleSection}>See our works</p>
+          <p className={portStyles.subtitleSection}>Work we’re proud of.</p>
         </div>
         <div className={portStyles.WorksContent}>
 

@@ -74,6 +74,7 @@
       }
     .footer_beSocial{
       color: white;
+      width: 10%;
       }
       .beSocial_title{
         color: white;
@@ -86,7 +87,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 1em;
-        width: 70px;
+        width: 100px;
         }
         .beSocial_rrss img{
           cursor: pointer;
@@ -95,7 +96,7 @@
       display: flex;
       justify-content: flex-end;
       align-self: flex-start;
-      width: 25%;
+      width: 20%;
       }
       .btn_getBonus{
         width: 180px;
@@ -118,7 +119,7 @@
 
   .footer_container{
     flex-wrap: wrap;
-    margin: 60px 7% 60px 7%;
+    margin: 60px 7% 40px 7%;
     }
     .footer_logo{
       margin-bottom: 1.5em;
@@ -155,7 +156,7 @@
 @media (min-width:0px) and (max-width:540px) {
   .footer_container{
     flex-wrap: wrap;
-    margin: 40px 7% 10px 7%;
+    margin: 50px 7% 0px 7%;
     }
     .footer_logo{
       margin-bottom: 1.2em;

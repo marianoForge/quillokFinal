@@ -40,7 +40,7 @@ const Services = () => {
       <div className={servicesStyles.flex_container}>
         <h2 className={servicesStyles.titleSection}>SERVICES</h2>
         <p className={servicesStyles.subtitleSection}>
-          Explore what we offer...
+        This is what we do.
         </p>
         <div className={servicesStyles.containerServices}>
           {renderedServices}

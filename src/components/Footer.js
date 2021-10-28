@@ -1,7 +1,8 @@
 import React from "react";
-import btGlobalFooter from "../images/bt_global_footer.svg";
-import btLinkedinFooter from "../images/bt_linkedin_footer.svg";
 import logoFooter from "../images/logo_footer.svg";
+import btLinkedinFooter from "../images/bt_linkedin_footer.svg";
+import btGlobalFooter from "../images/bt_global_footer.svg";
+import btInstagramFooter from "../images/bt_instagram_footer.svg";
 import * as footerStyles from "../styles/footer.module.css";
 
 const Footer = () => {
@@ -11,9 +12,8 @@ const Footer = () => {
         <div className={footerStyles.footer_container}>
           <div className={footerStyles.footer_logo}>
             <img src={logoFooter} alt="Quillok" />
-
             <p>
-              Helping businesses launch fast <br></br> and grow strong.{" "}
+            We are here to help you launch <br></br> fast and grow strong.
             </p>
           </div>
 
@@ -39,11 +39,14 @@ const Footer = () => {
               <div>
                 <img src={btGlobalFooter} alt="Global" />
               </div>
+              <div>
+                <img src={btInstagramFooter} alt="Instagram" />
+              </div>
             </div>
           </div>
 
           <div className={footerStyles.footer_getBonus}>
-            <div className={footerStyles.btn_getBonus}>GET A BONUS</div>
+            {/* <div className={footerStyles.btn_getBonus}>GET A BONUS</div> */}
           </div>
         </div>
       </div>
