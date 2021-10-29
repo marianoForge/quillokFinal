@@ -235,6 +235,9 @@
   .highlight {
     padding: 0.7em 0;
   }
+  .unhighligh {
+    padding: 0.7em 0;
+  }
 
   .btMoreProjects {
     margin-top: 0;
