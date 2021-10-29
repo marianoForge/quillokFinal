@@ -242,4 +242,11 @@
   .btMoreProjects {
     margin-top: 0;
   }
+  .unhighlight:active {
+    width: 0px;
+  }
+  .textUnselect:active {
+    padding-left: 0px;
+  }
+  
 }
