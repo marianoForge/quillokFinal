@@ -235,17 +235,20 @@
   .highlight {
     padding: 0.7em 0;
   }
-  .unhighlight {
-    padding: 0.7em 0;
-  }
 
   .btMoreProjects {
     margin-top: 0;
   }
-  .unhighlight:active {
+  .unhighlight {
     width: 0px;
   }
-  .textUnselect:active {
+  .textUnselect {
+    padding-left: 0px;
+  }
+  .unhighlight:hover {
+    width: 0px;
+  }
+  .textUnselect:hover {
     padding-left: 0px;
   }
   
