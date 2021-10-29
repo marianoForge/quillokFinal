@@ -92,7 +92,7 @@
   margin: 0 2.4em 0 1em;
 }
 .arrowSelect img {
-  width: clamp(1.8em, 3vw, 3em);
+  width: clamp(2.4em, 3vw, 3em);
 }
 .arrowUnselect {
   display: none;
@@ -147,9 +147,6 @@
   right: -8px;
   margin: 0px;
   padding: 0px;
-  /* animation-name: imageWork;
-      animation-duration: 0.8s;
-      animation-timing-function: ease-in-out; */
 }
 .imageWork {
   position: relative;
@@ -229,30 +226,28 @@
     margin: 0 0 3% 0;
   }
   .btWorks {
-    margin: 0 0 0.2% 0;
+    padding: 0.3em 0;
+    margin: 0.2em 0;
   }
-
-  .highlight {
-    padding: 0.7em 0;
+  .textSelect{
+    font-size: 2.3em;
+    padding: 0.4em 0;
+  }
+  .textUnselect{
+    font-size: 2.3em;
+    padding: 0.4em 0;
+  }
+  .textUnselect:hover{
+    padding: 0.4em 0;
   }
   .unhighligh {
-    padding: 0.7em 0;
-  }
-
-  .btMoreProjects {
-    margin-top: 0;
-  }
-  .unhighlight {
     width: 0px;
-  }
-  .textUnselect {
-    padding-left: 0px;
   }
   .unhighlight:hover {
     width: 0px;
   }
-  .textUnselect:hover {
-    padding-left: 0px;
+  .btMoreProjects {
+    margin-top: 20px;
   }
   
 }
